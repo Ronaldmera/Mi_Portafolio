@@ -2,11 +2,11 @@
   position: relative;
   top: 6vh;
   min-height: 94vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
 }
 #home .text {
   font-size: clamp(1.2rem, 5vw, 3rem);
@@ -53,6 +53,19 @@
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.397);
   pointer-events: none;
+}
+
+#home .line {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, #5bc0be, transparent);
+  /* border-bottom: 2px dashed #5bc0be; */
+}
+@media (min-width: 992px) {
+  #home .line {
+    top: 7vh !important;
+  }
 }
 @media (max-width: 991px) {
   #home .right .img-wrapper {

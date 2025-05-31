@@ -4,7 +4,10 @@
   margin: 0px;
   padding: 0px;
 }
-
+#home,
+#about {
+  scroll-margin-top: 100px; /* Ajusta según el alto de tu navbar */
+}
 body {
   background-color: #0a0f18;
   color: white;
