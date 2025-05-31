@@ -64,7 +64,7 @@
 }
 @media (min-width: 992px) {
   #home .line {
-    top: 7vh !important;
+    top: 17vh !important;
   }
 }
 @media (max-width: 991px) {
