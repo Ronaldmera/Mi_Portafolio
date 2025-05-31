@@ -1,0 +1,72 @@
+/* boton hamburguesa */
+/* padre del menu hamburguesa */
+.navbar {
+  background-color: #0a0f18;
+}
+.navbar-toggler {
+  background-color: #3a506b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+/* las 3 lineas del menu hamburguesa */
+.navbar-toggler .bar {
+  width: 20px;
+  height: 3px;
+  background-color: whitesmoke;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.navbar .name {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  font-style: oblique;
+  color: #5bc0be;
+}
+.nav-link {
+  font-weight: 600;
+  color: #96d1d0;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+.nav-link:hover {
+  color: rgb(107, 204, 211);
+}
+/* Cuando el botón tiene la clase "open" (cuando se hace clic) */
+.navbar-toggler.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px); /* Rotamos la primera barra */
+}
+
+.navbar-toggler.open .bar:nth-child(2) {
+  opacity: 0; /* La segunda barra desaparece */
+}
+
+.navbar-toggler.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px); /* Rotamos la tercera barra */
+}
+.navbar.fixed-top {
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+  right: 0 !important;
+}
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 720px) {
+  .navbar .name {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .name {
+    font-size: 1rem;
+  }
+}

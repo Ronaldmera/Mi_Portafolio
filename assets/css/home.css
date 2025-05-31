@@ -1,0 +1,28 @@
+#home {
+  position: relative;
+  top: 6vh;
+  min-height: 94vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#home .text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+#home .text span {
+  color: #84d0cf;
+}
+#home .btn-whatsApp {
+  color: #5bc0be;
+  background-color: #0a2222;
+}
+#home .btn-download-cv {
+  color: #5bc0be;
+  background-color: #0a2222;
+}
