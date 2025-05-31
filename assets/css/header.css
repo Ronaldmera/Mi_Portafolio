@@ -2,6 +2,17 @@
 /* padre del menu hamburguesa */
 .navbar {
   background-color: #0a0f18;
+  /*hace que el navbar al cargar la pagina haga una animacion de arriba a abajo*/
+  animation: 1s ease-in-out 0.4s 1 normal forwards running fadeIn;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+/* Animación tipo fadeIn */
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .navbar-toggler {
   background-color: #3a506b;
@@ -22,8 +33,6 @@
   transition: all 0.3s ease;
 }
 .navbar .name {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bolder;
   font-size: 2rem;
   font-style: oblique;

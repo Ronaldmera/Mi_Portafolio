@@ -1,3 +1,10 @@
+* {
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background-color: #0a0f18;
   color: white;
