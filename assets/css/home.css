@@ -1,12 +1,15 @@
 #home {
   position: relative;
   top: 6vh;
-  min-height: 94vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
+  padding: 4rem 1rem;
+}
+#home .container-home {
+  padding: 9rem 1rem;
 }
 #home .text {
   font-size: clamp(1.2rem, 5vw, 3rem);
@@ -63,13 +66,16 @@
   /* border-bottom: 2px dashed #5bc0be; */
 }
 @media (min-width: 992px) {
-  #home .line {
+  /* #home .line {
     top: 17vh !important;
-  }
+  } */
 }
 @media (max-width: 991px) {
   #home .right .img-wrapper {
     width: 15rem;
     height: 15rem;
+  }
+  #home .container-home {
+    padding: 0rem 0rem;
   }
 }
