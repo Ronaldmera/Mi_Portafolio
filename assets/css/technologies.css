@@ -1,0 +1,12 @@
+#technologies .card {
+  background-color: #101831;
+  width: 10rem;
+}
+#technologies .card .card-body .card-text {
+  color: white;
+}
+@media (min-width: 580px) {
+  #technologies .card {
+    width: 12rem;
+  }
+}
