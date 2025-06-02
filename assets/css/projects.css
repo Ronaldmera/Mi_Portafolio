@@ -1,0 +1,28 @@
+#projects .card {
+  background-color: #1e2737;
+  color: white;
+}
+#projects .card h4 {
+  color: #84d0cf;
+}
+#projects .card h5 {
+  color: #8cb9b9;
+}
+#projects .card h5::before {
+  content: "⚙️";
+  display: inline-block;
+  /* background-color: #000000; */
+  background-color: #041414;
+  margin-right: 10px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+#projects .card img {
+  height: 200px;
+  border-radius: 8px 8px 0px 0px;
+  object-fit: cover;
+}
+#projects .card .btn {
+  background-color: #418688;
+  color: white;
+}
