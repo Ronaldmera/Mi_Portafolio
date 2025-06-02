@@ -10,6 +10,10 @@
 #projects {
   scroll-margin-top: 100px; /* Ajusta según el alto de tu navbar */
 }
+html {
+  /* aunque no se pueda hacer scroll, la barra siempre esté ahí, pero desactivada */
+  overflow-y: scroll;
+}
 body {
   background-image: url(/assets/images/fondo-body.webp);
   background-position: center;
@@ -34,4 +38,12 @@ body::after {
 }
 h2 {
   color: #5bc0be;
+}
+/* hace que cuando se active el loader ya no haya scroll */
+.no-scroll {
+  overflow: hidden;
+}
+/* elimina el padding agregado cuando se abre un modal para que el contenido no se mueva */
+body.modal-open {
+  padding-right: 0 !important;
 }
