@@ -7,7 +7,8 @@
 #home,
 #about,
 #technologies,
-#projects {
+#projects,
+#contact {
   scroll-margin-top: 100px; /* Ajusta según el alto de tu navbar */
 }
 html {
