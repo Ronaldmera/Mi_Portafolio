@@ -1,6 +1,11 @@
 #projects .card {
   background-color: #1e2737;
   color: white;
+  transition: 0.2s ease;
+}
+#projects .card:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 0px 6px #84d0cf;
 }
 #projects .card h4 {
   color: #84d0cf;
@@ -25,4 +30,11 @@
 #projects .card .btn {
   background-color: #418688;
   color: white;
+}
+/* Desactiva los efectos hover en dispositivos táctiles para evitar comportamientos no deseados */
+@media (hover: none) and (pointer: coarse) {
+  #projects .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }

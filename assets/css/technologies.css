@@ -3,10 +3,23 @@
   /* background-color: #0606076c; */
   background-color: #1e2737;
   width: 10rem;
+  transition: 0.2s ease;
+}
+#technologies .card:hover {
+  transform: scale(1.05);
+  box-shadow: 1px 0px 6px #84d0cf;
 }
 #technologies .card .card-body .card-text {
   color: white;
 }
+/* Desactiva los efectos hover en dispositivos táctiles para evitar comportamientos no deseados */
+@media (hover: none) and (pointer: coarse) {
+  #technologies .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
 @media (min-width: 580px) {
   #technologies .card {
     width: 12rem;
