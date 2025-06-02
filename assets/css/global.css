@@ -11,8 +11,26 @@
   scroll-margin-top: 100px; /* Ajusta según el alto de tu navbar */
 }
 body {
-  background-color: #0a0f18;
+  background-image: url(/assets/images/fondo-body.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+}
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.836);
+  z-index: -1;
 }
 h2 {
   color: #5bc0be;
