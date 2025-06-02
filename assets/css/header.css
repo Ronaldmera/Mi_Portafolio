@@ -67,6 +67,27 @@
   .navbar-nav {
     margin-top: 30px;
   }
+  /* Bootstrap breakpoint para navbar colapsado */
+  #navbarNavDropdown {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1117; /* Color de fondo igual al navbar */
+  }
+
+  #navbarNavDropdown .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  #navbarNavDropdown .navbar-nav .nav-item {
+    display: flex;
+    width: 100%;
+  }
+  #navbarNavDropdown .navbar-nav .nav-item .nav-link {
+    text-align: center;
+    width: 100%;
+  }
 }
 @media (max-width: 720px) {
   .navbar .name {
