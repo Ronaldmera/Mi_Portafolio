@@ -55,18 +55,18 @@ body.modal-open {
 }
 /* estilos para el boton flotante de whatsApp */
 .whatsApp-flotante {
-  filter: drop-shadow(0 0 5px rgb(6, 196, 91));
+  filter: drop-shadow(0 0 5px rgb(13, 139, 70));
 }
 .whatsApp-flotante a {
   font-size: 2rem;
-  background-color: rgb(14, 94, 44);
+  background-color: #2cd46ca1;
   padding: 15px;
   display: flex;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 10px rgba(6, 196, 91, 0.4);
-  color: #25d366;
+  color: #fbfffd;
   text-decoration: none;
   transition: 0.2 ease;
 }
