@@ -9,7 +9,7 @@
   padding: 4rem 1rem;
 }
 #home .container-home {
-  padding: 9rem 1rem;
+  padding: 3rem 1rem;
 }
 #home .text {
   font-size: clamp(1.2rem, 5vw, 3rem);
