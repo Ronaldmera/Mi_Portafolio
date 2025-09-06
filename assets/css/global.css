@@ -48,8 +48,10 @@ body {
   z-index: 0;
 }
 
-h2 {
+body h2 {
   color: #5bc0be;
+  font-weight: bolder;
+  font-size: 40px;
 }
 /* hace que cuando se active el loader ya no haya scroll */
 .no-scroll {
