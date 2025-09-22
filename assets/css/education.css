@@ -1,0 +1,32 @@
+.bg-cards-study {
+  background-color: #1e2737;
+}
+.bg-cards-study .year {
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+.bg-cards-study p {
+  margin-bottom: 0;
+}
+.bg-cards-study h5 {
+  font-weight: 300;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+}
+.bg-cards-study .institution {
+  font-weight: 300;
+  font-size: 0.9rem;
+  font-style: italic;
+  text-transform: capitalize;
+}
+.bg-icons-study {
+  color: #66d7d5;
+}
+.card-education .content a {
+  color: whitesmoke;
+}
+.card-education {
+  box-shadow: 1px 1px 2px #418688;
+}
+.card-education:hover {
+  box-shadow: 0px 0px 10px #54afb2;
+}

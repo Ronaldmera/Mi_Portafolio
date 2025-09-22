@@ -81,7 +81,6 @@ body.modal-open {
 .whatsApp-flotante a:hover {
   transform: scale(1.05);
 }
-
 @media (max-width: 520px) {
   .whatsApp-flotante a {
     font-size: 1.6rem;
