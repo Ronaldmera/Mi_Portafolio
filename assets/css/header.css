@@ -39,7 +39,7 @@
   color: #5bc0be;
 }
 .nav-link {
-  font-weight: 600;
+  font-weight: 300;
   color: #96d1d0;
   font-size: clamp(0.8rem, 2vw, 1rem);
 }
@@ -85,7 +85,7 @@
     width: 100%;
   }
   #navbarNavDropdown .navbar-nav .nav-item .nav-link {
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
   }
 }
