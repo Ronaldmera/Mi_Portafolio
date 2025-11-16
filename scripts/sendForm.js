@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init("LL7zHTKhOzljSR30E");
+  emailjs.init("fRsn8VlPtn4W0QDIu");
 
   document
     .getElementById("contact-form")
@@ -38,6 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch((error) => {
           //   console.error("Error al enviar el correo:", error);
           textModal.textContent = "Hubo un error al enviar el mensaje";
+          const bsModal = new bootstrap.Modal(
+            document.getElementById("statusModal")
+          );
+          bsModal.show();
+
+          this.reset();
         })
         .finally(() => {
           loader.style.display = "none"; // Ocultar loader después de la respuesta
