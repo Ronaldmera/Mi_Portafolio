@@ -22,22 +22,11 @@ html {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("/assets/images/fondo-body.webp");
+  /* background-image: url("/assets/images/fondo-body.webp"); */
   background-size: cover;
   background-position: center;
   z-index: -2;
-}
-
-/* Capa oscura encima del fondo */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.938);
-  z-index: -1;
+  background-color: #0a0f18;
 }
 
 body {
@@ -45,7 +34,6 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  z-index: 0;
 }
 
 body h2 {
