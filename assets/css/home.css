@@ -1,6 +1,14 @@
 .color-primary {
   color: var(--color-primary);
 }
+.custom-bg-color {
+  background: #070c14;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 12, 20, 1) 22%,
+    rgba(10, 15, 24, 1) 85%
+  );
+}
 #home {
   position: relative;
   top: 6vh;

@@ -7,6 +7,7 @@
 
 :root {
   --color-primary: #5bc0be;
+  /* --custom-bg-color: #01030641; */
 }
 
 #home,
@@ -20,25 +21,13 @@ html {
   /* aunque no se pueda hacer scroll, la barra siempre esté ahí, pero desactivada */
   overflow-y: scroll;
 }
-/* Fondo fijo con div */
-.bg-parallax {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  /* background-image: url("/assets/images/fondo-body.webp"); */
-  background-size: cover;
-  background-position: center;
-  z-index: -2;
-  background-color: #0a0f18;
-}
 
 body {
   color: white;
   margin: 0;
   padding: 0;
   position: relative;
+  background-color: #0a0f18;
 }
 
 body h2 {
