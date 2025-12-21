@@ -1,3 +1,6 @@
+.color-primary {
+  color: var(--color-primary);
+}
 #home {
   position: relative;
   top: 6vh;
@@ -18,15 +21,23 @@
 }
 
 #home .text span {
-  color: #84d0cf;
+  color: var(--color-primary);
 }
-#home .btns {
-  color: #5bc0be;
-  background-color: #0a2222;
+#home .btns:nth-child(1) {
+  background-color: var(--color-primary);
+  color: black;
 }
-#home .btns:hover {
+#home .btns:nth-child(2) {
   background-color: #052029;
   color: white;
+}
+#home .btns:hover:nth-child(1) {
+  background-color: #052029;
+  color: white;
+}
+#home .btns:hover:nth-child(2) {
+  background-color: var(--color-primary);
+  color: black;
 }
 
 #home .right .img {

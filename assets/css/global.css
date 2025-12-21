@@ -4,6 +4,11 @@
   margin: 0px;
   padding: 0px;
 }
+
+:root {
+  --color-primary: #5bc0be;
+}
+
 #home,
 #about,
 #technologies,
