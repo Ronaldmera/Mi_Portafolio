@@ -1,5 +1,5 @@
 #projects .card {
-  background-color: #1e2737;
+  background-color: var(--bg-custom-secondary);
   color: white;
   transition: 0.2s ease;
 }
@@ -16,7 +16,6 @@
 #projects .card h5::before {
   content: "⚙️";
   display: inline-block;
-  /* background-color: #000000; */
   background-color: #041414;
   margin-right: 10px;
   border-radius: 3px;

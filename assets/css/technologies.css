@@ -1,7 +1,5 @@
 #technologies .card {
-  /* background-color: #5369646c; */
-  /* background-color: #0606076c; */
-  background-color: #1e2737;
+  background-color: var(--bg-custom-secondary);
   width: 10rem;
   transition: 0.2s ease;
 }

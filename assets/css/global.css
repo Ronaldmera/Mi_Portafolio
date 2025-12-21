@@ -8,6 +8,11 @@
 :root {
   --color-primary: #5bc0be;
   /* --custom-bg-color: #01030641; */
+  --bg-custom-secondary: #1e2737;
+}
+
+.bg-custom-secondary {
+  background-color: var(--bg-custom-secondary);
 }
 
 #home,
