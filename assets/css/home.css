@@ -22,11 +22,11 @@
 #home .container-home {
   padding: 3rem 1rem;
 }
-#home .text {
+/* #home .text {
   font-size: clamp(1.2rem, 5vw, 3rem);
   font-weight: bolder;
   text-transform: uppercase;
-}
+} */
 
 #home .text span {
   color: var(--color-primary);
