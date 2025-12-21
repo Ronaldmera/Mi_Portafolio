@@ -10,6 +10,9 @@
   /* --custom-bg-color: #01030641; */
   --bg-custom-secondary: #1e2737;
 }
+.color-custom-primary {
+  color: var(--color-primary);
+}
 
 .bg-custom-secondary {
   background-color: var(--bg-custom-secondary);
