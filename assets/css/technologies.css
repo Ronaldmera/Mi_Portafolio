@@ -1,25 +1,44 @@
-#technologies .card {
-  background-color: var(--bg-custom-secondary);
-  width: 10rem;
-  transition: 0.2s ease;
+#technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#technologies .card:hover {
-  transform: scale(1.05);
-  box-shadow: 1px 0px 6px #84d0cf;
-}
-#technologies .card .card-body .card-text {
-  color: white;
-}
-/* Desactiva los efectos hover en dispositivos táctiles para evitar comportamientos no deseados */
-@media (hover: none) and (pointer: coarse) {
-  #technologies .card:hover {
-    transform: none;
-    box-shadow: none;
-  }
+.slider {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
 
-@media (min-width: 580px) {
-  #technologies .card {
-    width: 12rem;
+.logos {
+  width: max-content;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  animation: slide 35s linear infinite;
+  gap: clamp(50px, 4vw, 80px);
+}
+
+.logos img {
+  width: clamp(45px, 6vw, 110px);
+  height: auto;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
   }
 }

@@ -32,3 +32,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   escribirSpan();
 });
+
+const track = document.querySelector(".marquee-track");
