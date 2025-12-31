@@ -2,12 +2,14 @@
   color: var(--color-primary);
 }
 .custom-bg-color {
-  background: #070c14;
+  /* background: #070c14;
   background: linear-gradient(
     180deg,
     rgba(7, 12, 20, 1) 22%,
     rgba(10, 15, 24, 1) 85%
-  );
+  ); */
+  background: -webkit-linear-gradient(0deg, #0a0f18, #23474ccc);
+  background: linear-gradient(0deg, #0a0f18, #23474ccc);
 }
 #home {
   position: relative;
