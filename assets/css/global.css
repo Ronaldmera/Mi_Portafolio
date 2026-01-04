@@ -43,6 +43,7 @@ body h2 {
   color: #5bc0be;
   font-weight: bolder;
   font-size: clamp(1.8rem, 4vw, 2.5rem);
+  padding: 0 3rem;
 }
 /* hace que cuando se active el loader ya no haya scroll */
 .no-scroll {
