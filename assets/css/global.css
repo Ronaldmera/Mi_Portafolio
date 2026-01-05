@@ -55,7 +55,13 @@ body h2 {
 }
 footer {
   /* background-color: var(--bg-custom-secondary); */
-  background-color: #2f90bda3;
+  background: #0f0f0f;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 15, 15, 1) 0%,
+    rgba(22, 35, 42, 1) 45%,
+    rgba(43, 91, 115, 1) 100%
+  );
 }
 .max-width {
   max-width: 1000px;
