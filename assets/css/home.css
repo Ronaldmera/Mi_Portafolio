@@ -1,14 +1,6 @@
 .color-primary {
   color: var(--color-primary);
 }
-.custom-bg-color {
-  /* background: #070c14;
-  background: linear-gradient(
-    180deg,
-    rgba(7, 12, 20, 1) 22%,
-    rgba(10, 15, 24, 1) 85%
-  ); */
-}
 #home {
   position: relative;
   top: 6vh;
@@ -18,17 +10,23 @@
   text-align: center;
   flex-direction: column;
   padding: 4rem 0px;
+  background-image: url("../images/imageGrande.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #home .container-home {
   padding: 3rem 1rem;
 }
-
+#home .container-img {
+  font-size: 0.8rem;
+}
 #home .text span {
   color: var(--color-primary);
 }
 #home .btns:nth-child(1) {
   background-color: var(--color-primary);
-  color: black;
+  color: var(--font-no-strong);
 }
 #home .btns:nth-child(2) {
   background-color: var(--bg-custom-secondary);
@@ -42,30 +40,28 @@
   background-color: var(--color-primary);
   color: black;
 }
-
-#home .right .img {
-  position: relative; /* importante para manejar z-index */
-  z-index: 2; /* asegura que esté por encima del ::after */
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  filter: drop-shadow(1px 0px 2px #0cafaf);
-  max-height: 500px;
-  transition: ease 0.3s;
+#home .img-hero {
+  transition: all 0.2s;
 }
 
-#home .right .img:hover {
-  transform: scale(1.01);
-  filter: drop-shadow(1px 0px 10px #0cafaf);
+#home .img-hero:hover {
+  filter: drop-shadow(0px 0px 1px var(--color-primary));
 }
 
 @media (max-width: 991px) {
-  #home .right .img {
-    max-height: 400px;
+  #home .img-hero {
+    max-height: 20rem;
   }
 
   #home .container-home {
     padding: 0rem 0rem;
+  }
+}
+@media (max-width: 576px) {
+  #home {
+    background-image: none;
+  }
+  #home .img-hero {
+    max-height: 14rem;
   }
 }
