@@ -37,7 +37,7 @@
 }
 
 #projects .card .btn {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
   color: var(--color-font-strong);
 }
 /* Desactiva los efectos hover en dispositivos táctiles para evitar comportamientos no deseados */
