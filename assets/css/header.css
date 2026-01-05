@@ -6,6 +6,7 @@
   animation: 1s ease-in-out 0.4s 1 normal forwards running fadeIn;
   opacity: 0;
   transform: translateY(-20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.047);
 }
 /* Animación tipo fadeIn */
 @keyframes fadeIn {
@@ -72,7 +73,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0d1117; /* Color de fondo igual al navbar */
   }
 
   #navbarNavDropdown .navbar-nav {
