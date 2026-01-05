@@ -1,7 +1,7 @@
 /* boton hamburguesa */
 /* padre del menu hamburguesa */
 .navbar {
-  background-color: #0a0f18;
+  background-color: #0f0f0f;
   /*hace que el navbar al cargar la pagina haga una animacion de arriba a abajo*/
   animation: 1s ease-in-out 0.4s 1 normal forwards running fadeIn;
   opacity: 0;
@@ -36,15 +36,15 @@
   font-weight: bolder;
   font-size: 2rem;
   font-style: oblique;
-  color: #5bc0be;
+  color: var(--color-primary);
 }
 .nav-link {
   font-weight: 300;
-  color: #96d1d0;
+  color: #ffff;
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
 .nav-link:hover {
-  color: rgb(107, 204, 211);
+  color: var(--color-primary);
 }
 /* Cuando el botón tiene la clase "open" (cuando se hace clic) */
 .navbar-toggler.open .bar:nth-child(1) {

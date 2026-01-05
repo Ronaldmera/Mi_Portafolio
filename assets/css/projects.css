@@ -1,24 +1,28 @@
 #projects .card {
   background-color: var(--bg-custom-secondary);
-  color: white;
   transition: 0.2s ease;
+  color: var(--color-font-strong);
+  padding: 0.3rem;
 }
+
 #projects .card:hover {
-  transform: scale(1.02);
-  box-shadow: 1px 0px 6px #84d0cf;
+  box-shadow: 0px 0px 4px var(--color-primary);
 }
 #projects .card h4 {
-  color: #84d0cf;
+  color: var(--color-primary);
+  font-style: italic;
+  font-weight: bolder;
 }
 #projects .card h5 {
-  color: #8cb9b9;
+  color: var(--color-font-no-strong);
+  font-size: 1rem;
 }
+
 #projects .card h5::before {
-  content: "⚙️";
+  content: "<>";
   display: inline-block;
-  background-color: #041414;
+  color: var(--color-primary);
   margin-right: 10px;
-  border-radius: 3px;
   vertical-align: middle;
 }
 #projects .card img {
@@ -26,9 +30,15 @@
   border-radius: 8px 8px 0px 0px;
   object-fit: cover;
 }
+#projects .card .container-tech-list li {
+  font-size: 14px;
+  background-color: #272626;
+  color: var(--color-font-no-strong);
+}
+
 #projects .card .btn {
-  background-color: #418688;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-font-strong);
 }
 /* Desactiva los efectos hover en dispositivos táctiles para evitar comportamientos no deseados */
 @media (hover: none) and (pointer: coarse) {

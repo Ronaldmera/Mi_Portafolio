@@ -1,6 +1,6 @@
 /* From Uiverse.io by Yaya12085 */
 #contact .container-contact .box {
-  background-color: #1e2737;
+  background-color: var(--bg-custom-secondary);
   border-radius: 10px;
   padding: 20px;
   width: 550px;
@@ -12,7 +12,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
-  color: #418688;
+  color: var(--color-primary);
 }
 
 .form {
@@ -35,18 +35,19 @@
 .form .group textarea {
   padding: 4px;
   border-radius: 5px;
-  border: 1px solid #41868860;
+  border: 1px solid #3ea9df4f;
   margin-bottom: 20px;
   outline: 0;
   width: 100%;
-  background-color: transparent;
-  color: white;
+  background-color: var(--bg-custom-secondary);
+  color: var(--font-no-strong);
   font-size: 0.9rem;
 }
 .form .group input:focus,
 .form .group textarea:focus {
-  border: 1px solid #418688;
-  box-shadow: 0 0 3px #418688;
+  border: 1px solid #3ea9df9f;
+  background-color: #1c1c1c;
+  color: var(--font-no-strong);
 }
 
 .form .group textarea {
@@ -55,8 +56,8 @@
 }
 
 .form button {
-  background-color: #418688;
-  color: whitesmoke;
+  background-color: var(--color-primary);
+  color: var(--font-strong);
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
@@ -66,8 +67,15 @@
 }
 
 .form button:hover {
-  background-color: #4186889c;
-  box-shadow: 0 0 10px #09d1d8;
+  background-color: #3ea9dfb0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #1c1c1c inset;
+  -webkit-text-fill-color: #ffffffa0;
+  transition: background-color 9999s ease-in-out 0s;
 }
 
 @media (max-width: 768px) {

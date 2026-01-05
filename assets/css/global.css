@@ -7,9 +7,16 @@
 }
 
 :root {
-  --color-primary: #5bc0be;
-  /* --custom-bg-color: #01030641; */
-  --bg-custom-secondary: #1e2737;
+  --color-primary: #3ea9df;
+  --bg-custom-secondary: #1c1c1c;
+  --color-font-no-strong: #c7c7c7;
+  --color-font-strong: #fff;
+}
+.font-strong {
+  color: var(--color-font-strong);
+}
+.font-no-strong {
+  color: var(--color-font-no-strong);
 }
 .color-custom-primary {
   color: var(--color-primary);
@@ -32,18 +39,25 @@ html {
 }
 
 body {
-  color: white;
+  color: var(--color-font-strong);
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: #0a0f18;
+  background-color: #0f0f0f;
 }
 
 body h2 {
-  color: #5bc0be;
+  color: var(--color-primary);
   font-weight: bolder;
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   padding: 0 3rem;
+}
+footer {
+  /* background-color: var(--bg-custom-secondary); */
+  background-color: #2f90bda3;
+}
+.max-width {
+  max-width: 1000px;
 }
 /* hace que cuando se active el loader ya no haya scroll */
 .no-scroll {
@@ -65,10 +79,11 @@ body.modal-open {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 10px rgba(6, 196, 91, 0.4);
+  box-shadow: 0 0 1px rgba(6, 196, 91, 0.4);
   color: #fbfffd;
   text-decoration: none;
   transition: 0.2 ease;
+  transition: all 0.2s;
 }
 .whatsApp-flotante a:hover {
   transform: scale(1.05);
