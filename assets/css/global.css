@@ -9,7 +9,7 @@
 :root {
   --color-primary: #3ea9df;
   --color-primary-dark: #3ea9df71;
-  --bg-custom-secondary: #1c1c1c;
+  --bg-custom-secondary: #0b0b0b;
   --color-font-no-strong: #c7c7c7;
   --color-font-strong: #fff;
 }
@@ -44,7 +44,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: #0f0f0f;
+  background-color: #000000fc;
 }
 
 body h2 {
@@ -56,12 +56,6 @@ body h2 {
 footer {
   /* background-color: var(--bg-custom-secondary); */
   background: #0f0f0f;
-  background: linear-gradient(
-    180deg,
-    rgba(15, 15, 15, 1) 0%,
-    rgba(22, 35, 42, 1) 45%,
-    rgba(43, 91, 115, 1) 100%
-  );
 }
 .max-width {
   max-width: 1000px;
