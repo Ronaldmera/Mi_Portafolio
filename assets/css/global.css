@@ -68,6 +68,16 @@ footer {
 body.modal-open {
   padding-right: 0 !important;
 }
+
+.barraProgreso {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #1d5c7e, #3ea9df);
+  width: 0%;
+  z-index: 999999;
+}
 /* estilos para el boton flotante de whatsApp */
 .whatsApp-flotante {
   filter: drop-shadow(0 0 5px rgb(13, 139, 70));
