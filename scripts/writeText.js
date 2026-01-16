@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".writeText");
 
   const spanText = "Desarrollador";
-  const normalText = " Junior";
+  const normalText = " De Software";
 
   container.innerHTML = "";
 
