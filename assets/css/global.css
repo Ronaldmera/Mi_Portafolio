@@ -105,3 +105,12 @@ body.modal-open {
     padding: 12px;
   }
 }
+#cta {
+  background-image: url("../images/image.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#cta .container {
+  padding: clamp(80px, 15vw, 200px) 10px !important;
+}
