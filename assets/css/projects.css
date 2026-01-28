@@ -28,7 +28,6 @@
 #projects .card img {
   height: 200px;
   border-radius: 8px 8px 0px 0px;
-  object-fit: cover;
 }
 #projects .card .container-tech-list li {
   font-size: 14px;
