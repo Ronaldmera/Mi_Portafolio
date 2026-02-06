@@ -1,12 +1,8 @@
 #projects .card {
   background-color: var(--bg-custom-secondary);
-  transition: 0.2s ease;
   color: var(--color-font-strong);
   padding: 0.3rem;
-}
-
-#projects .card:hover {
-  box-shadow: 0px 0px 4px var(--color-primary);
+  contain: layout paint;
 }
 #projects .card h4 {
   color: var(--color-primary);
@@ -38,6 +34,9 @@
 #projects .card .btn {
   background-color: var(--color-primary-dark);
   color: var(--color-font-strong);
+}
+#projects .card .btn:hover {
+  background-color: var(--color-primary);
 }
 /* Desactiva los efectos hover en dispositivos táctiles para evitar comportamientos no deseados */
 @media (hover: none) and (pointer: coarse) {
