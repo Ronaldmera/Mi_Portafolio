@@ -57,6 +57,9 @@ footer {
   /* background-color: var(--bg-custom-secondary); */
   background: #0f0f0f;
 }
+footer a {
+  color: var(--color-font-no-strong);
+}
 .max-width {
   max-width: 1000px;
 }
