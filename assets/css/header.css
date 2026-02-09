@@ -42,7 +42,6 @@
 .nav-link {
   font-weight: 300;
   color: #ffff;
-  font-size: clamp(1rem, 2vw, 1.2rem);
 }
 .nav-link:hover {
   color: var(--color-primary);
