@@ -28,7 +28,7 @@
 }
 .card-education {
   box-shadow: 0px 0px 2px var(--color-primary);
-  transition: all 0.2s;
+  /* transition: all 0.2s; */
 }
 /* .card-education:hover {
   box-shadow: 0px 0px 4px #fff;

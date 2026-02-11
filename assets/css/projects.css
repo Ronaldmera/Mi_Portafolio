@@ -36,7 +36,7 @@
   color: var(--color-font-strong);
 }
 #projects .card .btn:hover {
-  background-color: var(--color-primary);
+  background-color: #1f6588;
 }
 /* Desactiva los efectos hover en dispositivos táctiles para evitar comportamientos no deseados */
 @media (hover: none) and (pointer: coarse) {
