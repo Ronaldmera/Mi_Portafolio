@@ -38,6 +38,15 @@ html {
   /* aunque no se pueda hacer scroll, la barra siempre esté ahí, pero desactivada */
   overflow-y: scroll;
 }
+.card,
+.card-education {
+  box-shadow: none;
+  border: none;
+}
+.card,
+.card * {
+  transition: none;
+}
 
 body {
   color: var(--color-font-strong);
