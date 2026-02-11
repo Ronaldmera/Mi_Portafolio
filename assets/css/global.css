@@ -139,3 +139,6 @@ body.modal-open {
 #cta .container {
   padding: clamp(80px, 15vw, 200px) 10px !important;
 }
+.text-status-form {
+  color: black;
+}
