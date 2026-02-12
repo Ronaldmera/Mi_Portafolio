@@ -1,11 +1,11 @@
 .logos {
   display: flex;
   flex-wrap: wrap;
-  gap: clamp(20px, 7vw, 50px);
+  gap: clamp(1rem, 5vw, 3rem);
 }
 .logos img {
-  width: clamp(50px, 12vw, 90px);
-  padding: clamp(2px, 4vw, 10px);
+  width: clamp(3.9rem, 12vw, 6rem);
+  padding: clamp(2px, 4vw, 0.6rem);
   background-color: var(--bg-custom-secondary);
   border-radius: 10px;
   filter: grayscale(20%);
