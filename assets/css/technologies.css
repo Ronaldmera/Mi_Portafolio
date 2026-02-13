@@ -8,5 +8,5 @@
   padding: clamp(2px, 4vw, 0.6rem);
   background-color: var(--bg-custom-secondary);
   border-radius: 10px;
-  filter: grayscale(20%);
+  opacity: 0.5;
 }
