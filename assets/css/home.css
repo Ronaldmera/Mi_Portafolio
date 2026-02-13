@@ -25,20 +25,21 @@
   color: var(--color-primary);
 }
 #home .btns:nth-child(1) {
-  background-color: var(--color-primary);
+  background-color: var(--light-blue);
   color: var(--font-no-strong);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 #home .btns:nth-child(2) {
   background-color: var(--bg-custom-secondary);
   color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 #home .btns:hover:nth-child(1) {
   background-color: var(--bg-custom-secondary);
   color: white;
 }
 #home .btns:hover:nth-child(2) {
-  background-color: var(--color-primary);
-  color: black;
+  background-color: var(--light-blue);
 }
 #home .img-hero {
   transition: all 0.2s;
