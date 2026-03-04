@@ -4,11 +4,7 @@
   padding: 0.3rem;
   contain: layout paint;
 }
-#projects .card h4 {
-  color: var(--color-primary);
-  font-style: italic;
-  font-weight: bolder;
-}
+
 #projects .card h5 {
   color: var(--color-font-no-strong);
   font-size: 1rem;

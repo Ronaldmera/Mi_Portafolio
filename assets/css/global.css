@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Swanky+and+Moo+Moo&family=Tagesschrift&display=swap");
 * {
-  font-family: Montserrat, quicksand;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
@@ -17,12 +15,11 @@
     opacity 0.4s ease,
     transform 0.4s ease;
 }
-
 :root {
   --color-primary: #3ea9df;
   --color-primary-dark: #3ea9df71;
   --bg-custom-secondary: #0b0b0b;
-  --color-font-no-strong: #c7c7c7;
+  --color-font-no-strong: #c7c7c7ed;
   --color-font-strong: #fff;
   --light-blue: #0a324f;
 }
@@ -67,13 +64,21 @@ body {
   padding: 0;
   position: relative;
   background-color: #000000fc;
+  font-family: "Mona Sans";
 }
 
 body h2 {
   color: var(--color-primary);
   font-weight: bolder;
   font-size: clamp(1.8rem, 4vw, 2.5rem);
-  padding: 0 3rem;
+  padding: 0 0rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Hubot Sans", sans-serif;
 }
 footer {
   /* background-color: var(--bg-custom-secondary); */
@@ -142,4 +147,17 @@ body.modal-open {
 }
 .text-status-form {
   color: black;
+}
+.description {
+  max-width: 40rem;
+  color: var(--color-font-no-strong);
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 3px;
+  margin: 10px 0px 20px 0px;
+  background: var(--color-primary-dark);
 }
