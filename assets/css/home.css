@@ -24,9 +24,7 @@
 #home .text {
   letter-spacing: 0.1rem;
 }
-#home .text h2 span {
-  color: white;
-}
+
 #home .btns:nth-child(1) {
   background-color: var(--light-blue);
   color: var(--font-no-strong);
