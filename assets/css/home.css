@@ -54,10 +54,6 @@
   #home .img-hero {
     max-height: 20rem;
   }
-
-  #home .container-home {
-    padding: 0rem 0rem;
-  }
 }
 @media (max-width: 576px) {
   #home {
