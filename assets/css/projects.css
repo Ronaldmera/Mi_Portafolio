@@ -37,8 +37,8 @@
 #projects .btn-show-more {
   width: 7rem;
   box-shadow: 1px 1px 10px var(--color-primary);
-  background-color: var(--color-font-no-strong);
-  color: rgb(1, 1, 1);
+  background-color: var(--light-blue);
+  color: var(--color-font-strong);
 }
 /* Desactiva los efectos hover en dispositivos táctiles para evitar comportamientos no deseados */
 @media (hover: none) and (pointer: coarse) {
