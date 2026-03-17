@@ -87,6 +87,7 @@ footer {
 footer a,
 p {
   color: var(--color-font-no-strong);
+  font-size: 1.1rem;
 }
 .max-width {
   max-width: 1000px;
