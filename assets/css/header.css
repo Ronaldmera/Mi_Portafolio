@@ -1,7 +1,7 @@
 /* boton hamburguesa */
 /* padre del menu hamburguesa */
 .navbar {
-  background-color: #0f0f0f;
+  background-color: #030303;
   /*hace que el navbar al cargar la pagina haga una animacion de arriba a abajo*/
   animation: 1s ease-in-out 0.4s 1 normal forwards running fadeIn;
   opacity: 0;
