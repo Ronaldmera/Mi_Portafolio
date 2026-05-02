@@ -80,6 +80,9 @@ h4,
 h5 {
   font-family: "Hubot Sans", sans-serif;
 }
+h4 {
+  font-weight: bolder;
+}
 footer {
   /* background-color: var(--bg-custom-secondary); */
   background: #0f0f0f;
