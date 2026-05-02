@@ -55,13 +55,15 @@ let card = `
     </div>
   </div>
 `;
-
 function agregarTextoBtn(btn) {
-  let text = btn.textContent.trim();
-  if (text == "Ver más") {
-    btn.textContent = "Ver menos";
+  const expandido = btn.classList.contains("expandido");
+
+  if (!expandido) {
+    btn.classList.add("expandido");
+    btn.innerHTML = `Ver menos <i class="bi bi-arrow-left ms-2"></i>`;
   } else {
-    btn.textContent = "Ver más";
+    btn.classList.remove("expandido");
+    btn.innerHTML = `Ver más <i class="bi bi-arrow-right ms-2"></i>`;
   }
 }
 let existscard = false;
