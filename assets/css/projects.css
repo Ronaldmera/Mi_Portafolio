@@ -13,7 +13,7 @@
 #projects .card h5::before {
   content: "<>";
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
   margin-right: 10px;
   vertical-align: middle;
 }
