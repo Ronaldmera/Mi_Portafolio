@@ -33,6 +33,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/home.css" />
@@ -45,6 +49,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- scripts -->
     <!-- Libreria EmailJS para enviar correos-->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -352,140 +358,183 @@
             >Desarrollo Web
           </h4>
           <div class="container-projects row g-4 justify-content-start py-4">
-            <!-- Proyecto 1 -->
-            <div class="col-md-6 col-lg-4">
-              <div class="card h-100 w-100">
-                <img
-                  src="/assets/images/projects/admTasks.webp"
-                  class="card-img-top"
-                  alt="ADM Tasks"
-                  loading="lazy"
-                  draggable="false"
-                  decoding="async"
-                />
-                <div class="card-body d-flex flex-column">
-                  <h4 class="card-title text-center">ADM Tasks</h4>
-                  <p class="card-text">
-                    Aplicación web para crear, editar y organizar tareas
-                    personales.
-                  </p>
+            <!-- Slider main container -->
+            <div class="swiper swiper-web">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <div class="card h-100 w-100">
+                    <img
+                      src="/assets/images/projects/admTasks.webp"
+                      class="card-img-top"
+                      alt="ADM Tasks"
+                      loading="lazy"
+                      draggable="false"
+                      decoding="async"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h4 class="card-title text-center">ADM Tasks</h4>
+                      <p class="card-text">
+                        Aplicación web para crear, editar y organizar tareas
+                        personales.
+                      </p>
 
-                  <div class="technologies pb-3">
-                    <h5 class="text-center">Tecnologías</h5>
+                      <div class="technologies pb-3">
+                        <h5 class="text-center">Tecnologías</h5>
+                        <ul
+                          class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
+                        >
+                          <li class="p-1 rounded-1">HTML</li>
+                          <li class="p-1 rounded-1">CSS</li>
+                          <li class="p-1 rounded-1">JavaScript</li>
+                          <li class="p-1 rounded-1">MySQL</li>
+                          <li class="p-1 rounded-1">GitHub</li>
+                          <li class="p-1 rounded-1">Laravel</li>
+                        </ul>
+                      </div>
 
-                    <div class="container-tech-list">
-                      <ul
-                        class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
+                      <a
+                        href="https://github.com/Ronaldmera/admTareas/"
+                        target="_blank"
+                        class="btn mt-auto d-flex justify-content-center"
                       >
-                        <li class="p-1 rounded-1">HTML</li>
-                        <li class="p-1 rounded-1">CSS</li>
-                        <li class="p-1 rounded-1">JavaScript</li>
-                        <li class="p-1 rounded-1">MySQL</li>
-                        <li class="p-1 rounded-1">GitHub</li>
-                        <li class="p-1 rounded-1">Laravel</li>
-                      </ul>
+                        Explorar
+                      </a>
                     </div>
                   </div>
-
-                  <a
-                    href="https://github.com/Ronaldmera/admTareas/"
-                    target="_blank"
-                    class="btn mt-auto d-flex justify-content-center"
-                  >
-                    Explorar
-                  </a>
                 </div>
-              </div>
-            </div>
-            <!-- proyecto2 -->
-            <div class="col-md-6 col-lg-4 d-flex">
-              <div class="card h-100 w-100">
-                <img
-                  src="/assets/images/projects/territorio-espiral.webp"
-                  class="card-img-top"
-                  alt="Territorio Espiral"
-                  loading="lazy"
-                  draggable="false"
-                  decoding="async"
-                />
-                <div class="card-body d-flex flex-column">
-                  <h4 class="card-title text-center">Territorio Espiral</h4>
-                  <p class="card-text">
-                    Página web realizada para un refugio de animales.
-                  </p>
-                  <div class="technologies pb-3">
-                    <h5 class="text-center">Tecnologías</h5>
-                    <div class="container-tech-list">
-                      <ul
-                        class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                  <div class="card h-100 w-100">
+                    <img
+                      src="/assets/images/projects/territorio-espiral.webp"
+                      class="card-img-top"
+                      alt="Territorio Espiral"
+                      loading="lazy"
+                      draggable="false"
+                      decoding="async"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h4 class="card-title text-center">Territorio Espiral</h4>
+                      <p class="card-text">
+                        Página web realizada para un refugio de animales.
+                      </p>
+
+                      <div class="technologies pb-3">
+                        <h5 class="text-center">Tecnologías</h5>
+                        <ul
+                          class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
+                        >
+                          <li class="p-1 rounded-1">HTML</li>
+                          <li class="p-1 rounded-1">CSS</li>
+                          <li class="p-1 rounded-1">JavaScript</li>
+                          <li class="p-1 rounded-1">Bootstrap</li>
+                          <li class="p-1 rounded-1">GitHub</li>
+                        </ul>
+                      </div>
+
+                      <a
+                        href="http://territorioespiral.netlify.app/"
+                        target="_blank"
+                        class="btn mt-auto d-flex justify-content-center"
                       >
-                        <li class="p-1 rounded-1">HTML</li>
-                        <li class="p-1 rounded-1">CSS</li>
-                        <li class="p-1 rounded-1">JavaScript</li>
-                        <li class="p-1 rounded-1">Bootstrap</li>
-                        <li class="p-1 rounded-1">GitHub</li>
-                      </ul>
+                        Explorar
+                      </a>
                     </div>
                   </div>
-
-                  <a
-                    href="http://territorioespiral.netlify.app/"
-                    target="_blank"
-                    class="btn mt-auto d-flex justify-content-center"
-                  >
-                    Explorar
-                  </a>
                 </div>
-              </div>
-            </div>
 
-            <!-- Proyecto 3 -->
-            <div class="col-md-6 col-lg-4 d-flex">
-              <div class="card h-100 w-100">
-                <img
-                  src="/assets/images/projects/shuddai-food.webp"
-                  class="card-img-top"
-                  alt="Shuddai Food"
-                  loading="lazy"
-                  draggable="false"
-                  decoding="async"
-                />
-                <div class="card-body d-flex flex-column">
-                  <h4 class="card-title text-center">Shuddai Food</h4>
-                  <p class="card-text">
-                    Sitio web informativo para un negocio de comidas rápidas con
-                    contacto por WhatsApp.
-                  </p>
-                  <div class="technologies pb-3">
-                    <h5 class="text-center">Tecnologías</h5>
-                    <div class="container-tech-list">
-                      <ul
-                        class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                  <div class="card h-100 w-100">
+                    <img
+                      src="/assets/images/projects/shuddai-food.webp"
+                      class="card-img-top"
+                      alt="Shuddai Food"
+                      loading="lazy"
+                      draggable="false"
+                      decoding="async"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h4 class="card-title text-center">Shuddai Food</h4>
+                      <p class="card-text">
+                        Sitio web informativo para un negocio de comidas rápidas
+                        con contacto por WhatsApp.
+                      </p>
+
+                      <div class="technologies pb-3">
+                        <h5 class="text-center">Tecnologías</h5>
+                        <ul
+                          class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
+                        >
+                          <li class="p-1 rounded-1">HTML</li>
+                          <li class="p-1 rounded-1">CSS</li>
+                          <li class="p-1 rounded-1">JavaScript</li>
+                          <li class="p-1 rounded-1">Bootstrap</li>
+                          <li class="p-1 rounded-1">GitHub</li>
+                        </ul>
+                      </div>
+
+                      <a
+                        href="https://shuddaifoodtuchin.netlify.app/"
+                        target="_blank"
+                        class="btn mt-auto d-flex justify-content-center"
                       >
-                        <li class="p-1 rounded-1">HTML</li>
-                        <li class="p-1 rounded-1">CSS</li>
-                        <li class="p-1 rounded-1">JavaScript</li>
-                        <li class="p-1 rounded-1">Bootstrap</li>
-                        <li class="p-1 rounded-1">GitHub</li>
-                      </ul>
+                        Explorar
+                      </a>
                     </div>
                   </div>
+                </div>
 
-                  <a
-                    href="https://shuddaifoodtuchin.netlify.app/"
-                    target="_blank"
-                    class="btn mt-auto d-flex justify-content-center"
-                  >
-                    Explorar
-                  </a>
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                  <div class="card h-100 w-100">
+                    <img
+                      src="/assets/images/projects/wellWoman.webp"
+                      class="card-img-top"
+                      alt="Well Woman"
+                      loading="lazy"
+                      draggable="false"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h4 class="card-title text-center">Well Woman</h4>
+                      <p class="card-text">
+                        Plataforma web de bienestar femenino con consejos, foros
+                        y tienda especializada.
+                      </p>
+
+                      <div class="technologies pb-3">
+                        <h5 class="text-center">Tecnologías</h5>
+                        <ul
+                          class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
+                        >
+                          <li class="p-1 rounded-1">HTML</li>
+                          <li class="p-1 rounded-1">CSS</li>
+                          <li class="p-1 rounded-1">JavaScript</li>
+                          <li class="p-1 rounded-1">MySQL</li>
+                          <li class="p-1 rounded-1">GitHub</li>
+                          <li class="p-1 rounded-1">Laravel</li>
+                        </ul>
+                      </div>
+
+                      <a
+                        href="https://github.com/HaJuegos/WellWoman"
+                        target="_blank"
+                        class="btn mt-auto d-flex justify-content-center"
+                      >
+                        Explorar
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <!-- Pagination -->
+              <div class="swiper-pagination"></div>
             </div>
-            <!-- Proyecto 4 -->
           </div>
-          <button class="btn btn-sm btn-outline-light btn-show-more mt-5">
-            Ver más <i class="bi bi-arrow-right ms-2"></i>
-          </button>
+
           <h4 class="font-no-strong border-bottom border-dark mt-5">
             <span
               ><i
@@ -493,45 +542,63 @@
               ></i></span
             >Automatización/Excel(VBA)
           </h4>
-          <div class="row g-4 justify-content-start py-4">
-            <!-- Proyecto 1 -->
-            <div class="col-md-6 col-lg-4 d-flex">
-              <div class="card h-100 w-100">
-                <img
-                  src="/assets/images/projects/reporte.svg"
-                  class="card-img-top"
-                  alt="Faltantes NC"
-                  loading="lazy"
-                  draggable="false"
-                  decoding="async"
-                />
-                <div class="card-body d-flex flex-column">
-                  <h4 class="card-title text-center">Faltantes NC</h4>
-                  <p class="card-text">
-                    Automatiza la creación de informes semanales de equipos
-                    faltantes, reduciendo tiempo y errores.
-                  </p>
-                  <div class="technologies pb-3">
-                    <h5 class="text-center">Tecnologías</h5>
-                    <div class="container-tech-list">
-                      <ul
-                        class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
-                      >
-                        <li class="p-1 rounded-1">Excel</li>
-                        <li class="p-1 rounded-1">Visual Basic(BVA)</li>
-                      </ul>
+          <!-- Slider main container -->
+          <div class="swiper swiper-automatizacion">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="row g-4 justify-content-start py-4">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img
+                        src="/assets/images/projects/reporte.svg"
+                        class="card-img-top"
+                        alt="Faltantes NC"
+                        loading="lazy"
+                        draggable="false"
+                        decoding="async"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h4 class="card-title text-center">Faltantes NC</h4>
+                        <p class="card-text">
+                          Automatiza la creación de informes semanales de
+                          equipos faltantes, reduciendo tiempo y errores.
+                        </p>
+
+                        <div class="technologies pb-3">
+                          <h5 class="text-center">Tecnologías</h5>
+                          <ul
+                            class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
+                          >
+                            <li class="p-1 rounded-1">Excel</li>
+                            <li class="p-1 rounded-1">Visual Basic (VBA)</li>
+                          </ul>
+                        </div>
+
+                        <a
+                          href="https://github.com/Ronaldmera/admTareas/"
+                          target="_blank"
+                          class="btn mt-auto d-flex justify-content-center"
+                        >
+                          Explorar
+                        </a>
+                      </div>
                     </div>
                   </div>
-                  <a
-                    href="https://github.com/Ronaldmera/admTareas/"
-                    target="_blank"
-                    class="btn mt-auto d-flex justify-content-center"
-                  >
-                    Explorar
-                  </a>
                 </div>
               </div>
+              <!-- <div class="swiper-slide">Slide 2</div> -->
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
           </div>
         </div>
       </section>

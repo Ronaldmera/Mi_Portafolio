@@ -103,16 +103,6 @@ p {
 body.modal-open {
   padding-right: 0 !important;
 }
-
-.barraProgreso {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 5px;
-  background: linear-gradient(90deg, #1d5c7e, #3ea9df);
-  width: 0%;
-  z-index: 999999;
-}
 /* estilos para el boton flotante de whatsApp */
 .whatsApp-flotante {
   filter: drop-shadow(0 0 5px rgb(13, 139, 70));
@@ -134,10 +124,26 @@ body.modal-open {
 .whatsApp-flotante a:hover {
   transform: scale(1.05);
 }
+.swiper {
+  height: auto;
+}
+
+.swiper-pagination-bullet {
+  background-color: gray !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary) !important;
+}
+
 @media (max-width: 520px) {
   .whatsApp-flotante a {
     font-size: 1.6rem;
     padding: 12px;
+  }
+  .swiper {
+    max-width: 312px;
   }
 }
 #cta {
