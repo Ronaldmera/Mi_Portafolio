@@ -6,6 +6,7 @@ AOS.init({
   offset: 100,
   disable: "mobile",
 });
+//carrusel para proyectos de desarrollo web
 const swiperWeb = new Swiper(".swiper-web", {
   // Optional parameters
   direction: "horizontal",
@@ -39,11 +40,11 @@ const swiperWeb = new Swiper(".swiper-web", {
     },
   },
 });
+
+//carrusel para proyectos de desarrollo macros
 const swiperAutomatizacion = new Swiper(".swiper-automatizacion", {
-  // Optional parameters
   direction: "horizontal",
   loop: false,
-  // slidesPerView: "auto",
   spaceBetween: 20,
 
   // If we need pagination

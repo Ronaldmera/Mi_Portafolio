@@ -34,14 +34,6 @@
 #projects .card .btn:hover {
   background-color: #1f6588;
 }
-#projects .btn-show-more {
-  /* width: 7rem; */
-  color: var(--color-font-strong);
-  border-color: var(--color-font-no-strong);
-}
-#projects .btn-show-more:hover {
-  color: black;
-}
 /* Desactiva los efectos hover en dispositivos táctiles para evitar comportamientos no deseados */
 @media (hover: none) and (pointer: coarse) {
   #projects .card:hover {

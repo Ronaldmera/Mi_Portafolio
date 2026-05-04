@@ -126,15 +126,18 @@ body.modal-open {
 }
 .swiper {
   height: auto;
+  padding: 50px 0px;
 }
 
 .swiper-pagination-bullet {
-  background-color: gray !important;
+  background-color: var(--color-font-no-strong) !important;
   opacity: 1 !important;
+  height: 20px;
+  width: 20px;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--color-primary) !important;
+  background-color: var(--color-primary-dark) !important;
 }
 
 @media (max-width: 520px) {
