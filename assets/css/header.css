@@ -81,6 +81,9 @@
     /* text-align: center; */
     width: 100%;
   }
+  .nav-link {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.133);
+  }
 }
 @media (max-width: 720px) {
   .navbar .name {
