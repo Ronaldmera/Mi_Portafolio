@@ -29,10 +29,7 @@
       href="https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@400;600;700&family=Mona+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
@@ -40,7 +37,6 @@
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/home.css" />
-    <link rel="stylesheet" href="assets/css/technologies.css" />
     <link rel="stylesheet" href="assets/css/projects.css" />
     <link rel="stylesheet" href="assets/css/education.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
@@ -63,7 +59,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="scripts/dateFooter.js" defer></script>
-    <script src="scripts/createCardProject.js" defer></script>
   </head>
 
   <body>
@@ -71,14 +66,13 @@
       <div class="container-fluid container-xl px-3 px-sm-4 d-flex">
         <div class="d-flex align-items-center">
           <img
-            src="./assets/images/logo.webp"
+            src="./assets/images/Logo-Pequeño.svg"
             alt="Logo Ronald Mera dev"
             class="img-fluid me-2"
             style="max-height: 3rem"
             draggable="false"
             decoding="async"
           />
-          <a class="text-decoration-none name mb-0" href="#home ">Ronald Dev</a>
         </div>
 
         <!-- Botón responsive -->
@@ -102,7 +96,10 @@
           class="collapse navbar-collapse justify-content-end px-1"
           id="navbarNavDropdown"
         >
-          <ul class="navbar-nav gap-1 gap-lg-3">
+          <ul class="navbar-nav gap-0 gap-lg-3">
+            <li class="d-lg-none list-unstyled text-start w-100 mb-0">
+              <h4 class="tex-menu">MENÚ</h4>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#home"
                 ><i class="bi bi-house me-1"></i>Inicio</a
@@ -119,7 +116,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects"
+              <a class="nav-link" href="#projects-header"
                 ><i class="bi bi-folder me-1"></i>Proyectos</a
               >
             </li>
@@ -133,38 +130,33 @@
       </div>
     </nav>
     <main>
-      <section id="home" class="custom-bg-color">
+      <section id="home">
         <div
-          class="container container-home my-1 d-flex flex-wrap align-items-center gap-4"
+          class="container text-start container-home my-1 d-flex flex-wrap align-items-center justify-content-center"
         >
           <div
-            class="left col-12 col-lg-7 text-start"
+            class="left col"
             data-aos="fade-right"
             data-aos-duration="1000"
             data-aos-delay="100"
+            style="max-width: 900px"
           >
             <div class="text text-capitalize">
-              <p class="text-uppercase small">Desarrollador Web</p>
-              <h2 class="fw-bolder">
-                Desarrollo
-                <span class="font-strong">Software según tus necesidades.</span>
+              <p class="text-uppercase small text-white-50">
+                Desarrollador Web
+              </p>
+              <h2 class="fw-bolder text-white">
+                Desarrollo software que conecta ideas con resultados
               </h2>
             </div>
-            <p class="font-no-strong pe-lg-5 my-4">
-              Construyo soluciones web modernas y funcionales enfocadas en
-              rendimiento, experiencia de usuario y claridad, ayudando a que
-              negocios y proyectos aprovechen mejor las oportunidades del
-              entorno digital.
+            <p class="text-white pe-lg-5 my-4">
+              Código limpio, diseño moderno y soluciones que generan impacto.
             </p>
-            <div
-              class="d-flex gap-4 color-primary justify-content-center justify-content-lg-start"
-            >
+            <div class="d-flex gap-2 text-white">
               <i class="bi bi-code fs-1"></i>
               <i class="bi bi-code-slash fs-1"></i>
             </div>
-            <div
-              class="d-flex flex-row gap-3 gap-lg-5 justify-content-center justify-content-lg-start"
-            >
+            <div class="d-flex flex-row gap-3 gap-lg-5">
               <a
                 href="https://wa.me/+573005791413"
                 target="_blank"
@@ -181,512 +173,486 @@
             </div>
           </div>
           <div
-            class="d-none d-lg-flex col-lg-4 container-img rounded-5 mt-lg-0"
+            class="right"
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="100"
             data-aos-easing="ease-out-cubic"
           >
             <img
-              src="assets/images/logo.webp"
-              alt="imagen Ronald Mera"
-              class="img img-fluid img-hero"
-              loading="lazy"
-              draggable="false"
-              decoding="async"
+              src="./assets/images/imgpc.svg"
+              class="img-fluid"
+              alt="icono computadora"
             />
           </div>
         </div>
       </section>
       <section id="about">
         <div
-          class="container my-5 py-lg-2 aos-item"
+          class="container my-5 py-lg-2"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="200"
         >
-          <div
-            class="row align-items-center justify-content-center bg-custom-secondary rounded-5 py-5"
-          >
-            <!-- COLUMNA TEXTO -->
-            <div class="col-12 col-md-7 order-1 order-md-2">
-              <small class="text-uppercase font-no-strong">Sobre mí</small>
-
-              <h2 class="mt-2 mb-3 font-strong p-0">
-                Hola, soy
-                <span class="color-custom-primary">Ronald Mera</span>
-              </h2>
-
-              <p class="font-no-strong">
-                Soy una persona apasionada por la programación y el aprendizaje
-                constante, enfocada en crear soluciones funcionales y bien
-                pensadas a través del desarrollo de software.
-              </p>
-
-              <p class="font-no-strong my-3">
-                Me caracterizo por ser dedicado, perseverante y orientado a la
-                mejora continua. Disfruto enfrentar retos, resolver problemas y
-                trabajar en proyectos que me permitan seguir creciendo tanto a
-                nivel técnico como personal.
-              </p>
-
-              <div class="row text-center mt-4">
-                <div class="col-4">
-                  <i class="bi bi-lightbulb fs-2 color-custom-primary"></i>
-                  <p class="mt-2 mb-0">Resolutivo</p>
-                </div>
-                <div class="col-4">
-                  <i class="bi bi-book fs-2 color-custom-primary"></i>
-                  <p class="mt-2 mb-0">Aprendiz constante</p>
-                </div>
-                <div class="col-4">
-                  <i class="bi bi-people fs-2 color-custom-primary"></i>
-                  <p class="mt-2 mb-0">Trabajo en equipo</p>
+          <div class="row align-items-center rounded-5 py-5 px-3 px-lg-5">
+            <!-- IMAGEN -->
+            <div
+              class="col-12 col-lg-5 mt-4 mt-md-0 text-center mb-0 mb-md-5 mb-lg-0 order-2 order-lg-1"
+            >
+              <div class="position-relative d-none d-lg-block">
+                <img
+                  src="./assets/images/imageProfile.webp"
+                  alt="Ronald Mera"
+                  class="img-fluid"
+                />
+                <!-- Badge flotante -->
+                <div
+                  class="position-absolute bottom-0 start-50 translate-middle-x bg-gray-dark text-dark px-4 py-2 rounded-pil"
+                >
+                  <small>Desarrollador Full Stack</small>
                 </div>
               </div>
             </div>
 
-            <!-- COLUMNA IMAGEN -->
-            <div
-              class="col-12 col-md-5 text-center mt-4 mt-md-0 order-2 order-md-1"
-            >
-              <img
-                src="./assets/images/imageProfile.webp"
-                alt="Foto de Ronald Mera"
-                class="img-fluid"
-                draggable="false"
-                decoding="async"
-              />
+            <!-- CONTENIDO -->
+            <div class="col-12 col-lg-7 order-1 order-lg-2">
+              <small class="text-uppercase text-muted"> Sobre mí </small>
+
+              <h2 class="mt-2">Hola, soy Ronald Mera</h2>
+
+              <p class="mt-4 text-muted">
+                Desarrollador apasionado por crear experiencias web funcionales,
+                intuitivas y enfocadas en resolver problemas reales.
+              </p>
+
+              <p class="text-muted">
+                Disfruto aprender constantemente, enfrentar nuevos retos y
+                transformar ideas en proyectos útiles y bien estructurados.
+              </p>
+
+              <!-- MINI DATOS -->
+              <div class="row mt-4 g-3">
+                <!-- Resolutivo -->
+                <div class="col-6 col-md-4">
+                  <div class="rounded-4 p-4 h-100 shadow-sm">
+                    <i
+                      class="bi bi-lightbulb d-block fs-2 text-primary mb-2"
+                    ></i>
+                    <h6 class="fw-bold mb-2">Resolutivo</h6>
+                    <p class="small text-muted mb-0">
+                      Encuentro soluciones prácticas y efectivas frente a
+                      cualquier desafío.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Aprendizaje Constante -->
+                <div class="col-6 col-md-4">
+                  <div class="rounded-4 p-4 h-100 shadow-sm">
+                    <i class="bi bi-book d-block fs-2 text-primary mb-2"></i>
+                    <h6 class="fw-bold mb-2">Aprendizaje Constante</h6>
+                    <p class="small text-muted mb-0">
+                      Me mantengo actualizado con nuevas tecnologías y buenas
+                      prácticas.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Trabajo en equipo -->
+                <div class="col-6 col-md-4">
+                  <div class="rounded-4 p-4 h-100 shadow-sm">
+                    <i class="bi bi-people d-block fs-2 text-primary mb-2"></i>
+                    <h6 class="fw-bold mb-2">Trabajo en equipo</h6>
+                    <p class="small text-muted mb-0">
+                      Colaboro de forma abierta y empática para lograr objetivos
+                      comunes.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section id="technologies">
-        <div class="container my-0 my-lg-5 py-5">
-          <h2 class="text-start title">Tecnologias</h2>
-          <p class="description mb-5">
+        <div class="container my-0 my-lg-5 py-lg-5">
+          <h2 class="text-center title">Tecnologías</h2>
+          <p class="description mb-5 mx-auto">
             Mi stack tecnológico está enfocado en el desarrollo web full stack,
-            trabajando tanto en el frontend como en el backend.
+            combinando herramientas modernas para crear soluciones eficientes y
+            escalables.
           </p>
-          <div class="container">
-            <ul
-              class="logos justify-content-sm-center p-0"
-              data-aos="fade"
-              data-aos-duration="1100"
-            >
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-java-plain"></i>
-                <span>Java</span>
-              </li>
 
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-php-plain"></i>
-                <span>PHP</span>
-              </li>
+          <div class="row g-4">
+            <!-- FRONTEND -->
+            <div class="col-12 col-md-4 shadow-sm">
+              <div class="rounded-4 p-4 text-center h-100">
+                <i
+                  class="bi bi-window d-block fs-1 mb-3 color-custom-primary"
+                ></i>
+                <h5 class="fw-bold mb-3">Frontend</h5>
+                <p class="text-muted">
+                  Me enfoco en crear interfaces modernas y funcionales, cuidando
+                  la experiencia del usuario.
+                </p>
+                <small class="d-block mt-3 text-uppercase text-muted fw-bold"
+                  >Tecnologías:</small
+                >
+                <p class="mb-0 text-muted">
+                  HTML, CSS, JavaScript, React, Bootstrap
+                </p>
+              </div>
+            </div>
 
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-javascript-plain"></i>
-                <span>JavaScript</span>
-              </li>
+            <!-- BACKEND -->
+            <div class="col-12 col-md-4 shadow-sm">
+              <div class="rounded-4 p-4 text-center h-100">
+                <i
+                  class="bi bi-server d-block fs-1 mb-3 color-custom-primary"
+                ></i>
+                <h5 class="fw-bold mb-3">Backend</h5>
+                <p class="text-muted">
+                  Desarrollo APIs y sistemas robustos que garantizan rendimiento
+                  y seguridad.
+                </p>
+                <small class="d-block mt-3 text-uppercase text-muted fw-bold"
+                  >Tecnologías:</small
+                >
+                <p class="mb-0 text-muted">
+                  PHP, Laravel, MySQL, PostgreSQL, MongoDB
+                </p>
+              </div>
+            </div>
 
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-html5-plain"></i>
-                <span>HTML</span>
-              </li>
-
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-css3-plain"></i>
-                <span>CSS</span>
-              </li>
-
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-laravel-plain"></i>
-                <span>Laravel</span>
-              </li>
-
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-mysql-plain"></i>
-                <span>MySQL</span>
-              </li>
-
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-postgresql-plain"></i>
-                <span>PostgreSQL</span>
-              </li>
-
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-mongodb-plain"></i>
-                <span>MongoDB</span>
-              </li>
-
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-git-plain"></i>
-                <span>Git</span>
-              </li>
-
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-github-original"></i>
-                <span>GitHub</span>
-              </li>
-
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-bootstrap-plain"></i>
-                <span>Bootstrap</span>
-              </li>
-
-              <li class="d-flex flex-column align-items-center">
-                <i class="devicon-react-original"></i>
-                <span>React</span>
-              </li>
-            </ul>
+            <!-- CONTROL DE VERSIONES -->
+            <div class="col-12 col-md-4 shadow-sm">
+              <div class="rounded-4 p-4 text-center h-100">
+                <i class="bi bi-git d-block fs-1 mb-3 color-custom-primary"></i>
+                <h5 class="fw-bold mb-3">Control de versiones</h5>
+                <p class="text-muted">
+                  Mantengo un flujo de trabajo ordenado y colaborativo mediante
+                  herramientas de control de código.
+                </p>
+                <small class="d-block mt-3 text-uppercase text-muted fw-bold"
+                  >Herramientas:</small
+                >
+                <p class="mb-0 text-muted">Git, GitHub</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <!-- Sección de título y descripción -->
+      <section id="projects-header" class="bg-degradado py-5">
+        <div class="container py-5 my-5 text-center">
+          <h2 class="title text-white fw-bolder">Proyectos</h2>
 
-      <section id="projects">
-        <div class="container my-lg-0 py-5">
-          <div class="title-subtitle">
-            <h2 class="title">Proyectos</h2>
-            <p class="description mb-5">
-              Estos son algunos trabajos donde transformé ideas en soluciones
-              funcionales y profesionales.
-            </p>
-          </div>
-          <h4 class="font-no-strong border-bottom border-dark">
-            <span><i class="bi bi-braces me-1 color-custom-primary"></i></span
-            >Desarrollo Web
-          </h4>
-          <div class="container-projects row g-4 justify-content-start py-4">
-            <!-- Slider main container -->
-            <div class="swiper swiper-web">
+          <p class="description mb-5 mx-auto text-white fs-4">
+            Una selección de proyectos donde he convertido ideas en experiencias
+            digitales funcionales, modernas y enfocadas en resolver necesidades
+            reales.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sección de tarjetas -->
+      <section id="projects-cards">
+        <div class="container">
+          <div class="container-projects row">
+            <div class="swiper swiper-web rounded-4">
               <div class="swiper-wrapper">
                 <!-- Slide 1 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide shadow-sm">
                   <div class="card h-100 w-100">
                     <img
                       src="/assets/images/projects/admTasks.webp"
                       class="card-img-top"
                       alt="ADM Tasks"
                       loading="lazy"
-                      draggable="false"
-                      decoding="async"
                     />
                     <div class="card-body d-flex flex-column">
+                      <h6
+                        class="bg-gray align-self-start px-1 px-sm-2 py-sm-1 rounded-pill small text-muted"
+                      >
+                        Desarrollo Web
+                      </h6>
                       <h4 class="card-title text-center">ADM Tasks</h4>
-                      <p class="card-text">
+                      <p class="card-text text-muted">
                         Aplicación web para crear, editar y organizar tareas
                         personales.
                       </p>
-
                       <div class="technologies pb-3">
                         <h5 class="text-center">Tecnologías</h5>
-                        <div class="container-tech-list">
-                          <ul
-                            class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
-                          >
-                            <li class="p-1 rounded-1">HTML</li>
-                            <li class="p-1 rounded-1">CSS</li>
-                            <li class="p-1 rounded-1">JavaScript</li>
-                            <li class="p-1 rounded-1">MySQL</li>
-                            <li class="p-1 rounded-1">GitHub</li>
-                            <li class="p-1 rounded-1">Laravel</li>
-                          </ul>
-                        </div>
+                        <ul
+                          class="list-unstyled d-flex gap-2 flex-wrap justify-content-center text-muted"
+                        >
+                          <li class="p-1 rounded-1">HTML</li>
+                          <li class="p-1 rounded-1">CSS</li>
+                          <li class="p-1 rounded-1">JavaScript</li>
+                          <li class="p-1 rounded-1">MySQL</li>
+                          <li class="p-1 rounded-1">GitHub</li>
+                          <li class="p-1 rounded-1">Laravel</li>
+                        </ul>
                       </div>
-
                       <a
                         href="https://github.com/Ronaldmera/admTareas/"
                         target="_blank"
                         class="btn mt-auto d-flex justify-content-center"
+                        >Explorar</a
                       >
-                        Explorar
-                      </a>
                     </div>
                   </div>
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide shadow-sm">
                   <div class="card h-100 w-100">
                     <img
                       src="/assets/images/projects/territorio-espiral.webp"
                       class="card-img-top"
                       alt="Territorio Espiral"
                       loading="lazy"
-                      draggable="false"
-                      decoding="async"
                     />
                     <div class="card-body d-flex flex-column">
+                      <h6
+                        class="bg-gray align-self-start px-1 px-sm-2 py-sm-1 rounded-pill small text-muted"
+                      >
+                        Desarrollo Web
+                      </h6>
                       <h4 class="card-title text-center">Territorio Espiral</h4>
-                      <p class="card-text">
+                      <p class="card-text text-muted">
                         Página web realizada para un refugio de animales.
                       </p>
-
                       <div class="technologies pb-3">
                         <h5 class="text-center">Tecnologías</h5>
-                        <div class="container-tech-list">
-                          <ul
-                            class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
-                          >
-                            <li class="p-1 rounded-1">HTML</li>
-                            <li class="p-1 rounded-1">CSS</li>
-                            <li class="p-1 rounded-1">JavaScript</li>
-                            <li class="p-1 rounded-1">Bootstrap</li>
-                            <li class="p-1 rounded-1">GitHub</li>
-                          </ul>
-                        </div>
+                        <ul
+                          class="list-unstyled d-flex gap-2 flex-wrap justify-content-center text-muted"
+                        >
+                          <li class="p-1 rounded-1">HTML</li>
+                          <li class="p-1 rounded-1">CSS</li>
+                          <li class="p-1 rounded-1">JavaScript</li>
+                          <li class="p-1 rounded-1">Bootstrap</li>
+                          <li class="p-1 rounded-1">GitHub</li>
+                        </ul>
                       </div>
-
                       <a
                         href="http://territorioespiral.netlify.app/"
                         target="_blank"
                         class="btn mt-auto d-flex justify-content-center"
+                        >Explorar</a
                       >
-                        Explorar
-                      </a>
                     </div>
                   </div>
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide shadow-sm">
                   <div class="card h-100 w-100">
                     <img
                       src="/assets/images/projects/shuddai-food.webp"
                       class="card-img-top"
                       alt="Shuddai Food"
                       loading="lazy"
-                      draggable="false"
-                      decoding="async"
                     />
                     <div class="card-body d-flex flex-column">
+                      <h6
+                        class="bg-gray align-self-start px-1 px-sm-2 py-sm-1 rounded-pill small text-muted"
+                      >
+                        Desarrollo Web
+                      </h6>
                       <h4 class="card-title text-center">Shuddai Food</h4>
-                      <p class="card-text">
+                      <p class="card-text text-muted">
                         Sitio web informativo para un negocio de comidas rápidas
                         con contacto por WhatsApp.
                       </p>
-
                       <div class="technologies pb-3">
-                        <div class="container-tech-list">
-                          <h5 class="text-center">Tecnologías</h5>
-                          <ul
-                            class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
-                          >
-                            <li class="p-1 rounded-1">HTML</li>
-                            <li class="p-1 rounded-1">CSS</li>
-                            <li class="p-1 rounded-1">JavaScript</li>
-                            <li class="p-1 rounded-1">Bootstrap</li>
-                            <li class="p-1 rounded-1">GitHub</li>
-                          </ul>
-                        </div>
+                        <h5 class="text-center">Tecnologías</h5>
+                        <ul
+                          class="list-unstyled d-flex gap-2 flex-wrap justify-content-center text-muted"
+                        >
+                          <li class="p-1 rounded-1">HTML</li>
+                          <li class="p-1 rounded-1">CSS</li>
+                          <li class="p-1 rounded-1">JavaScript</li>
+                          <li class="p-1 rounded-1">Bootstrap</li>
+                          <li class="p-1 rounded-1">GitHub</li>
+                        </ul>
                       </div>
-
                       <a
                         href="https://shuddaifoodtuchin.netlify.app/"
                         target="_blank"
                         class="btn mt-auto d-flex justify-content-center"
+                        >Explorar</a
                       >
-                        Explorar
-                      </a>
                     </div>
                   </div>
                 </div>
 
                 <!-- Slide 4 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide shadow-sm">
                   <div class="card h-100 w-100">
                     <img
                       src="/assets/images/projects/wellWoman.webp"
                       class="card-img-top"
                       alt="Well Woman"
                       loading="lazy"
-                      draggable="false"
                     />
                     <div class="card-body d-flex flex-column">
+                      <h6
+                        class="bg-gray align-self-start px-1 px-sm-2 py-sm-1 rounded-pill small text-muted"
+                      >
+                        Desarrollo Web
+                      </h6>
                       <h4 class="card-title text-center">Well Woman</h4>
-                      <p class="card-text">
+                      <p class="card-text text-muted">
                         Plataforma web de bienestar femenino con consejos, foros
                         y tienda especializada.
                       </p>
-
                       <div class="technologies pb-3">
                         <h5 class="text-center">Tecnologías</h5>
-                        <div class="container-tech-list">
-                          <ul
-                            class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
-                          >
-                            <li class="p-1 rounded-1">HTML</li>
-                            <li class="p-1 rounded-1">CSS</li>
-                            <li class="p-1 rounded-1">JavaScript</li>
-                            <li class="p-1 rounded-1">MySQL</li>
-                            <li class="p-1 rounded-1">GitHub</li>
-                            <li class="p-1 rounded-1">Laravel</li>
-                          </ul>
-                        </div>
+                        <ul
+                          class="list-unstyled d-flex gap-2 flex-wrap justify-content-center text-muted"
+                        >
+                          <li class="p-1 rounded-1">HTML</li>
+                          <li class="p-1 rounded-1">CSS</li>
+                          <li class="p-1 rounded-1">JavaScript</li>
+                          <li class="p-1 rounded-1">MySQL</li>
+                          <li class="p-1 rounded-1">GitHub</li>
+                          <li class="p-1 rounded-1">Laravel</li>
+                        </ul>
                       </div>
-
                       <a
                         href="https://github.com/HaJuegos/WellWoman"
                         target="_blank"
                         class="btn mt-auto d-flex justify-content-center"
+                        >Explorar</a
                       >
-                        Explorar
-                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide shadow-sm">
+                  <div class="card h-100 w-100">
+                    <img
+                      class="bg-dark"
+                      src="/assets/images/projects/reporte.svg"
+                      class="card-img-top"
+                      alt="Faltantes NC"
+                      loading="lazy"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h6
+                        class="bg-gray align-self-start px-1 px-sm-2 py-sm-1 rounded-pill small text-muted"
+                      >
+                        Automatización VBA
+                      </h6>
+                      <h4 class="card-title text-center">Faltantes NC</h4>
+                      <p class="card-text text-muted">
+                        Automatiza la creación de informes semanales de equipos
+                        faltantes, reduciendo tiempo y errores.
+                      </p>
+                      <div class="technologies pb-3">
+                        <h5 class="text-center">Tecnologías</h5>
+                        <ul
+                          class="list-unstyled d-flex gap-2 flex-wrap justify-content-center text-muted"
+                        >
+                          <li class="p-1 rounded-1">Excel</li>
+                          <li class="p-1 rounded-1">Visual Basic (VBA)</li>
+                        </ul>
+                      </div>
+                      <a
+                        href="https://github.com/Ronaldmera/admTareas/"
+                        target="_blank"
+                        class="btn mt-auto d-flex justify-content-center"
+                        >Explorar</a
+                      >
                     </div>
                   </div>
                 </div>
               </div>
-
-              <!-- Pagination -->
               <div class="swiper-pagination"></div>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="education" class="bg-light">
+        <div class="container my-lg-5 py-5">
+          <h2 class="text-center mb-4 title">Educación</h2>
 
-          <h4 class="font-no-strong border-bottom border-dark mt-5">
-            <span
-              ><i
-                class="bi bi-file-earmark-spreadsheet-fill me-1 color-custom-primary"
-              ></i></span
-            >Automatización/Excel(VBA)
-          </h4>
-          <!-- Slider main container -->
-          <div class="swiper swiper-automatizacion">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="row g-4 justify-content-start py-4">
-                  <div class="swiper-slide">
-                    <div class="card">
-                      <img
-                        src="/assets/images/projects/reporte.svg"
-                        class="card-img-top"
-                        alt="Faltantes NC"
-                        loading="lazy"
-                        draggable="false"
-                        decoding="async"
-                      />
-                      <div class="card-body d-flex flex-column">
-                        <h4 class="card-title text-center">Faltantes NC</h4>
-                        <p class="card-text">
-                          Automatiza la creación de informes semanales de
-                          equipos faltantes, reduciendo tiempo y errores.
-                        </p>
+          <div class="row bg-white rounded-5 shadow-sm">
+            <div
+              class="col-12 col-md-6 d-flex flex-column justify-content-center gap-3"
+            >
+              <h5 class="text-center mt-3 mt-xl-0">
+                <span><i class="bi-award-fill pe-2 text-dark"></i></span
+                >Certificaciones, Grados y cursos.
+              </h5>
+              <p
+                class="text-center text-muted mx-auto mb-4"
+                style="max-width: 500px"
+              >
+                Mi formación académica ha sido clave para construir bases
+                sólidas en desarrollo de software y seguir creciendo
+                profesionalmente como programador.
+              </p>
+              <div
+                class="card-education d-flex gap-2 rounded-3 py-2 px-3 bg-cards-study text-white"
+              >
+                <div class="icon">
+                  <i class="bi bi-mortarboard bg-icons-study fs-1"></i>
+                </div>
+                <div class="content">
+                  <h5>Técnico en Programación de Software</h5>
+                  <p class="institution">sena</p>
+                  <p class="year">2026</p>
+                </div>
+              </div>
+              <a
+                href="https://capacitateparaelempleo.org/verifica/dafc055d-f832-40a4-b20d-512940635cea/1f067fc9-d6da-44c5-84cd-abdf2046c4d1"
+                target="_blank"
+                class="text-decoration-none text-dark"
+              >
+                <div
+                  class="card-education d-flex gap-2 rounded-3 py-2 px-3 bg-cards-study text-white"
+                >
+                  <div class="icon">
+                    <i class="bi bi-award bg-icons-study fs-1"></i>
+                  </div>
 
-                        <div class="technologies pb-3">
-                          <h5 class="text-center">Tecnologías</h5>
-                          <div class="container-tech-list">
-                            <ul
-                              class="list-unstyled d-flex gap-2 flex-wrap justify-content-center"
-                            >
-                              <li class="p-1 rounded-1">Excel</li>
-                              <li class="p-1 rounded-1">Visual Basic (VBA)</li>
-                            </ul>
-                          </div>
-                        </div>
-
-                        <a
-                          href="https://github.com/Ronaldmera/admTareas/"
-                          target="_blank"
-                          class="btn mt-auto d-flex justify-content-center"
-                        >
-                          Explorar
-                        </a>
-                      </div>
-                    </div>
+                  <div class="content">
+                    <h5>Introducción a la Programación</h5>
+                    <p class="institution">Capacítate para el empleo</p>
+                    <p class="year">2024</p>
                   </div>
                 </div>
-              </div>
-              <!-- <div class="swiper-slide">Slide 2</div> -->
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+              </a>
 
-            <!-- If we need navigation buttons -->
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-        </div>
-      </section>
-      <section id="cta">
-        <div class="container" data-aos="fade-up" data-aos-delay="300">
-          <h2 class="p-0">Construyamos algo juntos</h2>
-          <p>
-            Estoy disponible para nuevos proyectos y colaboraciones en
-            desarrollo web.
-          </p>
-          <a
-            href="https://wa.me/+573005791413"
-            target="_blank"
-            class="btn btn-outline-light"
-            >Contactar</a
-          >
-        </div>
-      </section>
-      <section id="education">
-        <div class="container my-lg-5 py-5">
-          <h2 class="text-center mb-4">Educación</h2>
-          <p class="text-center font-no-strong">
-            <span><i class="bi bi-highlighter pe-2 text-light"></i></span
-            >Certificaciones, Grados y cursos.
-          </p>
-          <div
-            class="container d-flex flex-column justify-content-center gap-3"
-          >
-            <div
-              class="card-education d-flex gap-2 rounded-3 py-2 px-3 bg-cards-study"
-            >
-              <div class="icon">
-                <i class="bi bi-mortarboard bg-icons-study fs-1"></i>
-              </div>
-              <div class="content">
-                <h5>Técnico en Programación de Software</h5>
-                <p class="institution">sena</p>
-                <p class="year">2026</p>
-              </div>
-            </div>
-            <a
-              href="https://capacitateparaelempleo.org/verifica/dafc055d-f832-40a4-b20d-512940635cea/1f067fc9-d6da-44c5-84cd-abdf2046c4d1"
-              target="_blank"
-              class="text-decoration-none text-dark"
-            >
-              <div
-                class="card-education d-flex gap-2 rounded-3 py-2 px-3 bg-cards-study"
+              <a
+                href="https://capacitateparaelempleo.org/verifica/dafc055d-f832-40a4-b20d-512940635cea/58d61277-463f-410e-8936-97fe9e09465f"
+                target="_blank"
+                class="text-decoration-none text-dark"
               >
-                <div class="icon">
-                  <i class="bi bi-award bg-icons-study fs-1"></i>
-                </div>
+                <div
+                  class="card-education d-flex gap-2 rounded-3 py-2 px-3 bg-cards-study text-white"
+                >
+                  <div class="icon">
+                    <i class="bi bi-backpack bg-icons-study fs-1"></i>
+                  </div>
 
-                <div class="content">
-                  <h5>Introducción a la Programación</h5>
-                  <p class="institution">Capacítate para el empleo</p>
-                  <p class="year">2024</p>
+                  <div class="content">
+                    <h5>Administrador de Bases de Datos</h5>
+                    <p class="institution">Capacítate para el empleo</p>
+                    <p class="year">2024</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-
-            <a
-              href="https://capacitateparaelempleo.org/verifica/dafc055d-f832-40a4-b20d-512940635cea/58d61277-463f-410e-8936-97fe9e09465f"
-              target="_blank"
-              class="text-decoration-none text-dark"
-            >
-              <div
-                class="card-education d-flex gap-2 rounded-3 py-2 px-3 bg-cards-study"
-              >
-                <div class="icon">
-                  <i class="bi bi-backpack bg-icons-study fs-1"></i>
-                </div>
-
-                <div class="content">
-                  <h5>Administrador de Bases de Datos</h5>
-                  <p class="institution">Capacítate para el empleo</p>
-                  <p class="year">2024</p>
-                </div>
-              </div>
-            </a>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 d-flex">
+              <img
+                src="assets/images/education.svg"
+                alt="Ilustracion de estudiante"
+                class="img-fluid mx-auto w-100"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -698,13 +664,13 @@
           data-aos-easing="ease-out-quart"
         >
           <h2 class="text-center mb-4">Contáctame</h2>
-          <p class="text-center pb-3 font-no-strong">
+          <p class="text-center pb-3">
             ¿Tienes un proyecto en mente? ¡Escríbeme y lo haremos realidad!
           </p>
           <div class="container-contact">
-            <div class="box">
+            <div class="box bg-light shadow-sm">
               <span class="title-form">Formulario de Contacto</span>
-              <form class="form" id="contact-form">
+              <form class="form text-muted" id="contact-form">
                 <div class="group">
                   <label for="from_name">Nombre</label>
                   <input
@@ -807,7 +773,7 @@
     </div>
     <!-- footer -->
     <div class="mt-0 mt-md-4">
-      <footer class="text-start rounded-top-5">
+      <footer class="text-start rounded-top-5 text-white">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
           <!-- Section: Links -->
@@ -821,7 +787,7 @@
                 >
                   Ronald Dev
                 </h6>
-                <p class="font-no-strong">
+                <p class="text-white-50">
                   Gracias por visitar mi página web :)
                 </p>
               </div>
@@ -832,10 +798,14 @@
                 <h6 class="text-uppercase mb-4 font-weight-bold">
                   Enlaces útiles
                 </h6>
-                <p><a href="#home">Inicio</a></p>
-                <p><a href="#about">Sobre mí</a></p>
-                <p><a href="#technologies">Tecnologías</a></p>
-                <p><a href="#projects">Proyectos</a></p>
+                <p><a href="#home" class="text-white-50">Inicio</a></p>
+                <p><a href="#about" class="text-white-50">Sobre mí</a></p>
+                <p>
+                  <a href="#technologies" class="text-white-50">Tecnologías</a>
+                </p>
+                <p>
+                  <a href="#projects-header" class="text-white-50">Proyectos</a>
+                </p>
               </div>
 
               <hr class="w-100 clearfix d-md-none" />
@@ -845,11 +815,15 @@
                 <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
                 <p>
                   <i class="fas fa-envelope mr-3"></i>
-                  <a href="mailto:ronaldalme1230@gmail.com"
+                  <a
+                    href="mailto:ronaldalme1230@gmail.com"
+                    class="text-white-50"
                     >ronaldalme1230@gmail.com</a
                   >
                 </p>
-                <p><i class="fas fa-phone mr-3"></i> +57 3005791413</p>
+                <p class="text-white-50">
+                  <i class="fas fa-phone mr-3"></i> +57 3005791413
+                </p>
               </div>
             </div>
             <!--Grid row-->
@@ -862,6 +836,28 @@
           <section class="p-3 pt-0">
             <div class="row d-flex align-items-center">
               <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <div class="credits px-3">
+                  <p>
+                    <i class="bi bi-palette me-1"></i>
+                    Ilustraciones:
+                    <a
+                      href="https://storyset.com/data"
+                      target="_blank"
+                      class="text-white-50"
+                    >
+                      Data
+                    </a>
+                    y
+                    <a
+                      href="https://storyset.com/education"
+                      target="_blank"
+                      class="text-white-50"
+                    >
+                      Education
+                    </a>
+                    por Storyset.
+                  </p>
+                </div>
                 <div class="p-3">
                   © <span id="date"></span> Ronald Dev. Todos los derechos
                   reservados.

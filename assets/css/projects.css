@@ -1,42 +1,31 @@
-#projects .card {
-  background-color: var(--bg-custom-secondary);
-  color: var(--color-font-strong);
-  padding: 0.3rem;
-  contain: layout paint;
-}
-
-#projects .card h5 {
-  color: var(--color-font-no-strong);
+#projects-cards .card h5 {
   font-size: 1rem;
 }
 
-#projects .card h5::before {
-  content: "<>";
-  display: inline-block;
-  color: var(--color-primary-dark);
-  margin-right: 10px;
-  vertical-align: middle;
-}
-#projects .card img {
-  height: 200px;
+#projects-cards .card img {
+  height: 180px;
   border-radius: 8px 8px 0px 0px;
 }
-#projects .card .container-tech-list li {
+#projects-cards .card li {
   font-size: 14px;
-  background-color: #030303;
-  color: var(--color-font-no-strong);
+  background-color: #0303030d;
 }
 
-#projects .card .btn {
-  background-color: var(--color-primary-dark);
-  color: var(--color-font-strong);
+#projects-cards .card .btn {
+  background-color: rgb(93, 199, 202);
+  color: white;
+  transition: all 0.3s ease;
 }
-#projects .card .btn:hover {
-  background-color: #1f6588;
+#projects-cards .card .btn:hover {
+  background-color: rgb(88, 186, 189);
+}
+.container-projects {
+  position: relative;
+  top: -100px;
 }
 /* Desactiva los efectos hover en dispositivos táctiles para evitar comportamientos no deseados */
 @media (hover: none) and (pointer: coarse) {
-  #projects .card:hover {
+  #projects-cards .card:hover {
     transform: none;
     box-shadow: none;
   }

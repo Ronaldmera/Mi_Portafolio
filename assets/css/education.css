@@ -1,9 +1,14 @@
 .bg-cards-study {
-  background-color: var(--bg-custom-secondary);
+  background: linear-gradient(
+    90deg,
+    rgba(79, 171, 223, 1) 20%,
+    rgba(100, 210, 213, 1) 100%
+  );
 }
 .bg-cards-study .year {
   font-weight: 100;
   font-size: 0.9rem;
+  color: #ffffffe3;
 }
 .bg-cards-study p {
   margin-bottom: 0;
@@ -17,20 +22,8 @@
   font-size: 0.9rem;
   font-style: italic;
   text-transform: capitalize;
-  color: var(--color-font-no-strong);
+  color: #ffffffe3;
 }
 .bg-icons-study {
-  color: var(--color-primary);
+  color: #ffff;
 }
-.card-education .content {
-  color: var(--color-font-strong);
-  text-decoration: none;
-}
-.card-education {
-  box-shadow: 0px 0px 2px var(--color-primary);
-  /* transition: all 0.2s; */
-}
-/* .card-education:hover {
-  box-shadow: 0px 0px 4px #fff;
-  transform: translateX(10px);
-} */

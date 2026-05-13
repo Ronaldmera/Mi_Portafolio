@@ -40,30 +40,3 @@ const swiperWeb = new Swiper(".swiper-web", {
     },
   },
 });
-
-//carrusel para proyectos de desarrollo macros
-const swiperAutomatizacion = new Swiper(".swiper-automatizacion", {
-  direction: "horizontal",
-  loop: false,
-  spaceBetween: 20,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    650: {
-      slidesPerView: 2,
-      slidesPerGroup: 1,
-    },
-    992: {
-      slidesPerView: 3,
-    },
-  },
-});

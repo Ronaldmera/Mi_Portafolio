@@ -1,7 +1,7 @@
 /* boton hamburguesa */
 /* padre del menu hamburguesa */
 .navbar {
-  background-color: #030303;
+  background-color: #ffff;
   /*hace que el navbar al cargar la pagina haga una animacion de arriba a abajo*/
   animation: 1s ease-in-out 0.4s 1 normal forwards running fadeIn;
   opacity: 0;
@@ -16,30 +16,23 @@
   }
 }
 .navbar-toggler {
-  /* background-color: #3a506b; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  border: none;
 }
 /* las 3 lineas del menu hamburguesa */
 .navbar-toggler .bar {
   width: 20px;
   height: 3px;
-  background-color: #fff;
+  background-color: var(--color-primary);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
-.navbar .name {
-  font-weight: bolder;
-  font-size: 2rem;
-  font-style: oblique;
-  color: var(--color-primary);
-}
 .nav-link {
   font-weight: 300;
-  color: #ffff;
 }
 .nav-link:hover {
   color: var(--color-primary);
@@ -62,7 +55,7 @@
   right: 0 !important;
 }
 .nav-item .nav-link .bi {
-  color: var(--color-font-no-strong);
+  color: var(--color-gray-dark);
 }
 @media (max-width: 991px) {
   .navbar-nav {
@@ -99,4 +92,8 @@
   .navbar .name {
     font-size: 1rem;
   }
+}
+.tex-menu {
+  font-size: 11px;
+  color: var(--color-gray-dark);
 }

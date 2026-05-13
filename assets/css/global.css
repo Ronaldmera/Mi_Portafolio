@@ -16,27 +16,38 @@
     transform 0.4s ease;
 }
 :root {
-  --color-primary: #3ea9df;
-  --color-primary-dark: #215169;
-  --bg-custom-secondary: #0b0f14;
-  --color-font-strong: #f1f5f9e2;
-  --color-font-no-strong: #b5beccb0;
-  --light-blue: #076496;
+  --color-primary: #316bf1;
+  --color-gray: #c2ccd470;
+  --color-gray-dark: #b9bbbd;
+  --degradado: linear-gradient(
+    90deg,
+    rgba(49, 107, 241, 1) 2%,
+    rgba(79, 171, 223, 1) 62%,
+    rgba(100, 210, 213, 1) 100%
+  );
+  --font-color: rgb(0, 0, 0);
+  --color-primary-dark: var(--color-primary);
 }
-.font-strong {
-  color: var(--color-font-strong);
+.bg-gray-dark {
+  background-color: var(--color-gray-dark);
 }
-.font-no-strong {
-  color: var(--color-font-no-strong);
+.bg-gray {
+  background-color: var(--color-gray);
+  color: black;
 }
-.color-custom-primary {
-  color: var(--color-primary);
+.text-primary {
+  color: var(--color-primary) !important;
 }
-
-.bg-custom-secondary {
-  background-color: var(--bg-custom-secondary);
+.bg-primary {
+  background-color: var(--color-primary) !important;
 }
-
+.bg-degradado {
+  background: linear-gradient(
+    270deg,
+    rgba(49, 107, 241, 1) 0%,
+    rgba(100, 210, 213, 1) 100%
+  );
+}
 #home,
 #about,
 #technologies,
@@ -59,12 +70,12 @@ html {
 }
 
 body {
-  color: var(--color-font-strong);
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: #000000fc;
+  background-color: #ffff;
   font-family: "Mona Sans";
+  color: var(--font-color);
 }
 
 body h2 {
@@ -84,14 +95,9 @@ h4 {
   font-weight: bolder;
 }
 footer {
-  /* background-color: var(--bg-custom-secondary); */
   background: #0f0f0f;
 }
-footer a,
-p {
-  color: var(--color-font-no-strong);
-  font-size: 1.1rem;
-}
+
 .max-width {
   max-width: 1000px;
 }
@@ -126,44 +132,40 @@ body.modal-open {
 }
 .swiper {
   height: auto;
-  padding: 50px 0px;
+  background-color: #ffffff;
+  padding: 20px;
+  position: static;
 }
 
 .swiper-pagination-bullet {
-  background-color: var(--color-font-no-strong) !important;
+  background-color: var(--color-gray) !important;
   opacity: 1 !important;
   height: 20px;
   width: 20px;
+  top: 30px;
+  position: relative;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--color-primary-dark) !important;
+  background-color: rgba(100, 210, 213, 1) !important;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 550px) {
   .whatsApp-flotante a {
     font-size: 1.6rem;
     padding: 12px;
   }
   .swiper {
-    max-width: 312px;
+    max-width: 320px;
+    padding: 10px;
   }
 }
-#cta {
-  background-image: url("../images/image.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#cta .container {
-  padding: clamp(80px, 15vw, 200px) 10px !important;
-}
+
 .text-status-form {
   color: black;
 }
 .description {
   max-width: 40rem;
-  color: var(--color-font-no-strong);
 }
 
 .title::after {
@@ -171,6 +173,10 @@ body.modal-open {
   display: block;
   width: 4rem;
   height: 3px;
-  margin: 10px 0px 20px 0px;
-  background: var(--color-primary-dark);
+  background: var(--color-primary);
+  margin: 15px auto;
+}
+.card-about {
+  line-height: 1.1;
+  display: inline-block;
 }
