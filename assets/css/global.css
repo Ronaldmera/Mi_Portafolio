@@ -145,6 +145,12 @@ body.modal-open {
   top: 30px;
   position: relative;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  height: 30px;
+  width: 30px;
+  color: var(--color-gray-dark);
+}
 
 .swiper-pagination-bullet-active {
   background-color: rgba(100, 210, 213, 1) !important;
