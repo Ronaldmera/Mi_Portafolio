@@ -16,17 +16,14 @@
     transform 0.4s ease;
 }
 :root {
-  --color-primary: #316bf1;
+  --color-primary: #67d7d2;
+  --bg-color-primary: #05141f;
+  --bg-color-secondary: #48596511;
+  --bg-color-tertiary: #4859652e;
   --color-gray: #c2ccd470;
   --color-gray-dark: #b9bbbd;
-  --degradado: linear-gradient(
-    90deg,
-    rgba(49, 107, 241, 1) 2%,
-    rgba(79, 171, 223, 1) 62%,
-    rgba(100, 210, 213, 1) 100%
-  );
-  --font-color: rgb(0, 0, 0);
   --color-primary-dark: var(--color-primary);
+  --navbar-height: 8vh;
 }
 .bg-gray-dark {
   background-color: var(--color-gray-dark);
@@ -38,15 +35,14 @@
 .text-primary {
   color: var(--color-primary) !important;
 }
-.bg-primary {
-  background-color: var(--color-primary) !important;
+.bg-color-primary {
+  background-color: var(--bg-color-primary);
 }
-.bg-degradado {
-  background: linear-gradient(
-    270deg,
-    rgba(49, 107, 241, 1) 0%,
-    rgba(100, 210, 213, 1) 100%
-  );
+.bg-color-secondary {
+  background-color: var(--bg-color-secondary) !important;
+}
+.bg-color-tertiary {
+  background-color: var(--bg-color-tertiary);
 }
 #home,
 #about,
@@ -73,9 +69,9 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: #ffff;
+  background-color: var(--bg-color-primary);
   font-family: "Mona Sans";
-  color: var(--font-color);
+  color: #ffffff8e;
 }
 
 body h2 {
@@ -132,7 +128,7 @@ body.modal-open {
 }
 .swiper {
   height: auto;
-  background-color: #ffffff;
+  background-color: var(--bg-color-primary);
   padding: 20px;
   position: static;
 }
@@ -140,8 +136,8 @@ body.modal-open {
 .swiper-pagination-bullet {
   background-color: var(--color-gray) !important;
   opacity: 1 !important;
-  height: 20px;
-  width: 20px;
+  height: 1rem;
+  width: 1rem;
   top: 30px;
   position: relative;
 }

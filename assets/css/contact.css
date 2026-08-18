@@ -28,6 +28,7 @@
   font-size: 16px;
   position: relative;
   bottom: 4px;
+  color: white;
 }
 
 .form .group input,
@@ -39,6 +40,8 @@
   outline: 0;
   width: 100%;
   font-size: 0.9rem;
+  background-color: var(--bg-color-primary);
+  color: rgba(255, 255, 255, 0.5);
 }
 .form .group input:focus,
 .form .group textarea:focus {
@@ -51,8 +54,8 @@
 }
 
 .form button {
-  background: var(--degradado);
-  color: #fff;
+  background-color: rgba(93, 198, 202, 0.744);
+  color: rgba(255, 255, 255, 0.719);
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
@@ -68,7 +71,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #1c1c1c inset;
+  -webkit-box-shadow: 0 0 0 1000px #05141f inset;
   -webkit-text-fill-color: #ffffffa0;
   transition: background-color 9999s ease-in-out 0s;
 }

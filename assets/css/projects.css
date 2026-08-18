@@ -1,5 +1,12 @@
+#projects-cards .card {
+  background-color: var(--bg-color-primary);
+}
 #projects-cards .card h5 {
   font-size: 1rem;
+}
+#projects-cards .card h4 {
+  color: white;
+  margin: 1rem 0rem;
 }
 
 #projects-cards .card img {
@@ -12,17 +19,24 @@
 }
 
 #projects-cards .card .btn {
-  background-color: rgb(93, 199, 202);
-  color: white;
+  background-color: rgba(93, 198, 202, 0.744);
+  color: rgba(255, 255, 255, 0.719);
   transition: all 0.3s ease;
 }
 #projects-cards .card .btn:hover {
   background-color: rgb(88, 186, 189);
 }
+#projects-cards .card-body h6 {
+  background-color: #0a1015;
+}
+#projects-cards .card-body .card-text {
+  color: #ffffff8e;
+}
 .container-projects {
   position: relative;
   top: -100px;
 }
+
 /* Desactiva los efectos hover en dispositivos táctiles para evitar comportamientos no deseados */
 @media (hover: none) and (pointer: coarse) {
   #projects-cards .card:hover {
