@@ -43,3 +43,8 @@
   width: 500px;
   opacity: 0.65;
 }
+@media (max-width: 550px) {
+  #home .container-home {
+    padding: 0rem 1rem;
+  }
+}
