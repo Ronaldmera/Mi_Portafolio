@@ -12,6 +12,7 @@
 #projects-cards .card img {
   height: 180px;
   border-radius: 8px 8px 0px 0px;
+  object-fit: cover;
 }
 #projects-cards .card li {
   font-size: 14px;
