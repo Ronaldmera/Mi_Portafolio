@@ -7,7 +7,7 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding: 4rem 0px;
+  padding: 0rem 0px;
   background-color: var(--bg-color-primary);
 }
 #home .container-home {
