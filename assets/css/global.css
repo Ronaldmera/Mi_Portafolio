@@ -19,20 +19,12 @@
   --color-primary: #18c99a;
   --bg-color-primary: #101217;
   --bg-color-secondary: #48596511;
-  --bg-color-tertiary: #4859652e;
   --color-gray: #c2ccd470;
   --color-gray-dark: #b9bbbd;
-  --color-primary-dark: var(--color-primary);
   --navbar-height: 8vh;
   --color-white: #dce5e4;
 }
-.bg-gray-dark {
-  background-color: var(--color-gray-dark);
-}
-.bg-gray {
-  background-color: var(--color-gray);
-  color: black;
-}
+
 .text-primary {
   color: var(--color-primary) !important;
 }
@@ -41,9 +33,6 @@
 }
 .bg-color-secondary {
   background-color: var(--bg-color-secondary) !important;
-}
-.bg-color-tertiary {
-  background-color: var(--bg-color-tertiary);
 }
 .color-white {
   color: var(--color-white);
