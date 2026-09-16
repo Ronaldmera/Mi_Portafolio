@@ -20,12 +20,12 @@
 }
 
 #projects-cards .card .btn {
-  background-color: rgba(93, 198, 202, 0.744);
-  color: rgba(255, 255, 255, 0.719);
+  background-color: var(--color-primary);
+  color: black;
   transition: all 0.3s ease;
 }
 #projects-cards .card .btn:hover {
-  background-color: rgb(88, 186, 189);
+  color: rgba(0, 0, 0, 0.514);
 }
 #projects-cards .card-body h6 {
   background-color: #0a1015;

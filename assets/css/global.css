@@ -16,14 +16,15 @@
     transform 0.4s ease;
 }
 :root {
-  --color-primary: #67d7d2;
-  --bg-color-primary: #05141f;
+  --color-primary: #18c99a;
+  --bg-color-primary: #101217;
   --bg-color-secondary: #48596511;
   --bg-color-tertiary: #4859652e;
   --color-gray: #c2ccd470;
   --color-gray-dark: #b9bbbd;
   --color-primary-dark: var(--color-primary);
   --navbar-height: 8vh;
+  --color-white: #dce5e4;
 }
 .bg-gray-dark {
   background-color: var(--color-gray-dark);
@@ -43,6 +44,12 @@
 }
 .bg-color-tertiary {
   background-color: var(--bg-color-tertiary);
+}
+.color-white {
+  color: var(--color-white);
+}
+.text-white-custom {
+  color: var(--color-white) !important;
 }
 #home,
 #about,
@@ -76,7 +83,7 @@ body {
 }
 
 body h2 {
-  color: var(--color-primary);
+  color: var(--color-white);
   font-weight: bolder;
   font-size: clamp(1.8rem, 4vw, 3rem);
   padding: 0 0rem;
@@ -151,7 +158,7 @@ body.modal-open {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: rgba(100, 210, 213, 1) !important;
+  background-color: var(--color-primary) !important;
 }
 
 @media (max-width: 550px) {

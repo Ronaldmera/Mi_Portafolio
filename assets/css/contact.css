@@ -11,7 +11,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .form {
@@ -35,13 +35,13 @@
 .form .group textarea {
   padding: 4px;
   border-radius: 5px;
-  border: 1px solid #3ea9df4f;
+  border: 1px solid #92a2a94f;
   margin-bottom: 20px;
   outline: 0;
   width: 100%;
   font-size: 0.9rem;
   background-color: var(--bg-color-primary);
-  color: rgba(255, 255, 255, 0.5);
+  color: #dce5e49a;
 }
 .form .group input:focus,
 .form .group textarea:focus {
@@ -54,8 +54,8 @@
 }
 
 .form button {
-  background-color: rgba(93, 198, 202, 0.744);
-  color: rgba(255, 255, 255, 0.719);
+  background-color: var(--color-primary);
+  color: black;
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;

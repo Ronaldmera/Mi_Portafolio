@@ -22,5 +22,5 @@
   color: rgba(255, 255, 255, 0.5);
 }
 .bg-icons-study {
-  color: #67d7d175;
+  color: var(--color-primary);
 }

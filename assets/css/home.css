@@ -17,28 +17,29 @@
   font-size: 0.8rem;
 }
 #home .span {
-  color: #67d7d2;
+  color: var(--color-primary);
 }
 #home .text {
   letter-spacing: 0.1rem;
 }
-
 #home .btns:nth-child(1) {
-  color: rgb(15, 15, 15);
-  border: 1px solid black;
-  background-color: #67d7d2;
-}
-#home .btns:nth-child(2) {
   background-color: none;
-  color: white;
-  border: 1px solid #67d7d2;
-}
-#home .btns:hover:nth-child(1) {
+  color: var(--color-white);
   border: 1px solid var(--color-primary);
 }
-#home .btns:hover:nth-child(2) {
-  color: #316bf185;
+#home .btns:nth-child(2) {
+  border: 1px solid black;
+  background-color: var(--color-white);
 }
+#home .btns:hover:nth-child(1) {
+  border: 1px solid var(--color-white);
+}
+#home .btns:hover:nth-child(2) {
+  border: 1px solid var(--color-white);
+  background-color: var(--color-primary);
+  color: black;
+}
+
 .right img {
   width: 500px;
   opacity: 0.65;

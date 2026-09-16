@@ -20,7 +20,7 @@
 .navbar-toggler .bar {
   width: 20px;
   height: 3px;
-  background-color: var(--color-primary);
+  background-color: var(--color-white);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -29,7 +29,7 @@
   color: white;
 }
 .nav-link:hover {
-  color: var(--color-primary);
+  color: var(--color-gray);
 }
 /* Cuando el botón tiene la clase "open" (cuando se hace clic) */
 .navbar-toggler.open .bar:nth-child(1) {
