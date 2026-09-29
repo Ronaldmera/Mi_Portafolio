@@ -149,6 +149,15 @@ body.modal-open {
 .swiper-pagination-bullet-active {
   background-color: var(--color-primary) !important;
 }
+/* #technologies .row #icons {
+  margin: -60px auto 0 auto;
+  position: relative;
+} */
+#technologies .row #icons::before {
+  border: 2px solid var(--color-primary);
+  padding: 10px;
+  border-radius: 2em;
+}
 
 @media (max-width: 550px) {
   .whatsApp-flotante a {
